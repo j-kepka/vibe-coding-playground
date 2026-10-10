@@ -14,6 +14,7 @@ Use a separate copy and a fresh browser profile for storage tests. Open
 | Basic gameplay | Try a neighboring swap that makes no match, then a legal swap using clicks, dragging and the keyboard. | The rejected swap restores the exact board without points; legal swaps clear matches, refill the board and add points. |
 | Finished game and ranking | After scoring, choose **End game**, enter a qualifying name and save. Reload and open the leaderboard. | The ended board is locked; the saved result remains in the local Top 10. |
 | Independent audio | Enable music and effects, then turn each off separately. | The switches act independently. Both start off after reloading. |
+| Default and saved language | Open the game in a fresh browser profile. Select Polish or German, then reload. | The first load uses English. A saved language choice takes precedence after reloading; text, labels and the language selector agree. |
 
 ## Latest check
 
@@ -35,4 +36,12 @@ observed in the completed scenarios.
 These checks concern the current game, not its original intermediate versions.
 They used desktop browsers in headless mode; this pass did not include a physical
 phone, audible playback or a naturally completed no-moves game.
+
+## English-default check — 2026-10-10
+
+Codex checked an isolated copy opened through `file://` in headless Chrome.
+All six focused scenarios passed: fresh startup in English; saved Polish, German
+and English after reopening; an unsupported saved language; and blocked storage.
+The checks also covered language switching, translated text and attributes, and
+initialization of all 64 board cells. No uncaught JavaScript errors were observed.
 

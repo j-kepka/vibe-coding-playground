@@ -18,6 +18,7 @@ installation or server.
 
 Click or drag neighboring gems to match three or more. Enjoy cascades, hints,
 optional music and sound effects, and an English, Polish or German interface.
+English is the default; a saved language choice takes precedence.
 A game ends when no legal moves remain or when you choose **End game**.
 
 The local Top 10 and preferences belong to your browser profile. Copying the folder

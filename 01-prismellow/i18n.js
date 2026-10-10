@@ -281,14 +281,14 @@
   };
 
   const supported = language => Object.prototype.hasOwnProperty.call(translations, language);
-  let language = 'pl';
+  let language = 'en';
   try {
     const saved = localStorage.getItem('diamond-mines-language');
     if (supported(saved)) language = saved;
   } catch {}
 
   function t(key, params = {}) {
-    const template = translations[language][key] ?? translations.pl[key] ?? key;
+    const template = translations[language][key] ?? translations.en[key] ?? key;
     return template.replace(/\{(\w+)\}/g, (placeholder, name) =>
       Object.prototype.hasOwnProperty.call(params, name) ? String(params[name]) : placeholder);
   }
