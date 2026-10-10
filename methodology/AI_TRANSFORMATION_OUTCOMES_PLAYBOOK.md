@@ -11,7 +11,7 @@ Document outcomes rather than opinions about AI. Use the [template](AI_TRANSFORM
 - Include one or two actual decisions, AI corrections or resolved problems within **Intervention**; separate sections are unnecessary for a small case.
 - Separate delivered features, verification results and user feedback from business impact.
 - **Business impact** is optional for a commercial or organizational context. Use **Not applicable** for a hobby project and **Not measured** when relevant data is unavailable.
-- Optional professional or portfolio value can apply to hobby projects too. Describe capabilities supported by evidence separately from business impact; do not infer revenue or ROI from them.
+- **Professional relevance** is an optional portfolio reflection that can apply to hobby projects too. Describe a capability demonstrated by the author's decisions or work and link to supporting evidence. Keep it separate from business impact; do not infer revenue or ROI from it. Omit the section when it adds no useful context.
 - Label measurements, owner estimates and historical observations. Include their source, scope and limitations. Use **Not measured** when data is unavailable.
 - An effort estimate is not time saved. Claim savings only against a comparable baseline; an estimated manual build time is a counterfactual, not measured savings.
 - Link to available, publicly shareable evidence: code, reproducible checks, screenshots or approved feedback. Attribute evidence to the implementation and stage actually checked.
@@ -34,7 +34,7 @@ An unchecked item remains visible; completing the checklist does not replace evi
 1. **0–3 minutes:** choose one case and state the problem.
 2. **3–7 minutes:** record the baseline, requirements and intervention.
 3. **7–12 minutes:** add results and evidence; label unknowns.
-4. **12–16 minutes:** capture the human lesson, reusable asset and next opportunity.
+4. **12–16 minutes:** capture the human lesson, optional professional relevance, reusable asset and next opportunity.
 5. **16–20 minutes:** review accuracy, confidentiality, links and status; save the draft.
 
 Commit or publish only when requested and ready for review.

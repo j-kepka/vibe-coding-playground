@@ -40,7 +40,9 @@
 
 [Explain where human judgment, trust, empathy, accountability, or leadership remained essential. Briefly note what you would do differently next time, if useful.]
 
-[Optional portfolio reflection: a capability demonstrated by this case and its supporting evidence. This may also apply to a personal project.]
+## Professional relevance (optional)
+
+[For portfolio cases, describe a professionally relevant capability demonstrated by the author's decisions or work and link to its supporting evidence. This may also apply to a personal project. Omit this section when it adds no useful context.]
 
 ## Reusable asset
 

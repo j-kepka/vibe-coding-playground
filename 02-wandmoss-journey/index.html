@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#152622">
+  <meta name="description" data-i18n-content="page.description" content="Four chapters of a fairy-tale adventure: a glowing forest, dusk, cloud gardens and a duel with the Guardian of the Valley.">
+  <title>Wandmoss Journey · A fairy-tale adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="i18n.js"></script>
+  <script defer src="levels.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="autosave.js"></script>
+  <script defer src="renderer.js"></script>
+  <script defer src="music.js"></script>
+  <script defer src="effects.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <a class="wordmark" href="../README.md" aria-label="Vibe Coding Playground"><span class="brand-star">✳</span> PLAYGROUND <span class="edition">/ 02</span></a>
+      <div class="masthead-controls">
+        <span class="chapter"><span class="status-dot"></span><span data-i18n="page.tagline">SMALL GAME, BIG MAGIC</span></span>
+        <label class="language-picker" for="language-select"><span data-i18n="ui.language">Language</span><select id="language-select" data-i18n-aria-label="ui.language" aria-label="Language"><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="pl" lang="pl">Polski</option></select></label>
+      </div>
+    </header>
+
+    <section class="intro" aria-labelledby="title">
+      <div><p class="eyebrow" data-i18n="page.eyebrow">FROM THE FOREST TO THE CLOUDS</p><h1 id="title" data-i18n-html="page.heading">Wand<em>moss</em> <span class="title-journey">Journey</span><span class="title-star" aria-hidden="true">✦</span></h1></div>
+      <p class="intro-copy" data-i18n-html="page.intro">Put on your hat. Wake your wand.<br>Four chapters. One extraordinary journey.</p>
+    </section>
+
+    <div class="game-view" id="game-view">
+      <section class="game-shell" data-i18n-aria-label="ui.game" aria-label="Wandmoss Journey game">
+        <div class="toolbar">
+          <div class="level-label"><span class="level-number" id="level-number">01<span class="level-count">/04</span></span><div><span class="toolbar-eyebrow" data-i18n="ui.yourJourney">YOUR JOURNEY</span><strong id="level-name">Firefly Forest</strong></div></div>
+          <div class="stats">
+            <span id="health" class="health" aria-label="3 of 3 hearts"><span>♥</span><span>♥</span><span>♥</span></span>
+            <span class="stat-divider"></span>
+            <span class="firefly-stat" data-i18n-title="ui.firefliesTitle" title="Collected fireflies"><span aria-hidden="true">✦</span> <b id="collected">0</b><span class="stat-total">/ <span id="total">0</span></span></span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="sound" class="icon-button" type="button" aria-label="Enable music and effects" aria-pressed="false" data-i18n-title="ui.soundTitle" title="Music and effects">♫<span class="sound-slash" aria-hidden="true">/</span></button>
+            <button id="pause" class="icon-button" type="button" aria-label="Pause the game" data-i18n-title="ui.pauseTitle" title="Pause (P)">Ⅱ</button>
+            <button id="restart" class="icon-button" type="button" data-i18n-aria-label="ui.retryTitle" aria-label="Retry chapter / fight (R)" data-i18n-title="ui.retryTitle" title="Retry chapter / fight (R)">↻</button>
+            <button id="fullscreen" class="icon-button" type="button" aria-label="Full screen" aria-pressed="false" aria-controls="game-view" title="Full screen"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="fullscreen-enter" d="M9 3H3v6M15 3h6v6M21 15v6h-6M3 15v6h6"/><path class="fullscreen-exit" d="M3 9h6V3m6 0v6h6m0 6h-6v6m-6 0v-6H3"/></svg></button>
+          </div>
+        </div>
+
+        <div class="resource-bar" data-i18n-aria-label="ui.resources" aria-label="Score and magic">
+          <span class="score-stat"><span class="resource-label" data-i18n="ui.score">SCORE</span> <b id="score">0</b></span>
+          <span class="spell-status" id="spell-status"><kbd>X</kbd><span id="spell-label">Wand ready</span><span class="spell-track" aria-hidden="true"><span id="spell-fill"></span></span></span>
+          <button class="boots-status" id="boots-button" type="button" disabled aria-label="Rocket boots · find them in the clouds"><kbd>C</kbd><span class="boots-mark" aria-hidden="true">↟</span><span id="boots-label">Rocket boots · find them in the clouds</span></button>
+        </div>
+
+        <div class="save-bar">
+          <label class="autosave-option" for="autosave-toggle"><input id="autosave-toggle" type="checkbox" checked><span data-i18n="ui.autosave">Autosave</span></label>
+          <span id="save-status" role="status" aria-live="polite">Save at chapter start</span>
+        </div>
+
+        <div class="sound-bar" data-i18n-aria-label="music.label" aria-label="Music">
+          <span id="music-status" role="status" aria-live="polite">Sound off</span>
+          <label class="music-volume" for="music-volume"><span data-i18n="music.volume">Music volume</span><input id="music-volume" type="range" min="0" max="100" value="40" data-i18n-aria-label="music.volume" aria-label="Music volume" aria-valuetext="40 percent"></label>
+          <button id="music-credits" class="secondary-button" type="button" aria-haspopup="dialog" aria-controls="music-dialog" data-i18n="credits.title">Music and licenses</button>
+        </div>
+
+        <div class="stage" id="stage">
+          <canvas id="game" width="1152" height="648" tabindex="0" data-i18n-aria-label="ui.canvas" aria-label="Wandmoss Journey. Move with the arrow keys or A and D, jump with Space, cast spells with X or J once per second. After finding the boots, activate them with C." data-i18n="ui.canvasFallback">Your browser must support Canvas to run this game.</canvas>
+          <div class="stage-caption" id="stage-caption"><span class="caption-line"></span> CHAPTER I <span class="caption-separator">·</span> LIGHT BETWEEN THE TREES</div>
+          <div class="boss-hud" id="boss-hud" hidden>
+            <div class="boss-heading"><span data-i18n="ui.bossName">GUARDIAN OF THE VALLEY</span><b id="boss-count">10 / 10</b></div>
+            <div class="boss-health" id="boss-health" role="progressbar" data-i18n-aria-label="ui.bossHealth" aria-label="Guardian of the Valley health" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <p class="boss-prompt" id="boss-prompt" role="status" aria-live="polite"></p>
+            <button class="secondary-button boss-retry" id="retry-boss" type="button" data-i18n="ui.retryBoss" hidden>Retry fight · R</button>
+          </div>
+          <div class="transition-card" id="transition-card" role="status" aria-live="polite" hidden><span id="transition-icon" aria-hidden="true">✧</span><h2 id="transition-title"></h2><p id="transition-copy"></p></div>
+          <div class="overlay" id="overlay">
+            <div class="overlay-card">
+              <span class="overlay-ornament" id="overlay-icon" aria-hidden="true">✧</span>
+              <p class="eyebrow" id="overlay-kicker">AN ADVENTURE AWAITS</p>
+              <h2 id="overlay-title">A little dwarf.<br>An adventure above the clouds.</h2>
+              <p id="overlay-copy">Journey through the forest and dusk. Find rocket boots<br>in the Cloud Gardens and save the valley.</p>
+              <div class="ending-summary" id="ending-summary" hidden>
+                <div class="ending-route" data-i18n-aria-label="ui.route" aria-label="Four completed chapters"><span data-i18n="ui.routeForest">♧ FOREST</span><span data-i18n="ui.routeDusk">☾ DUSK</span><span data-i18n="ui.routeSky">☁ CLOUDS</span><span data-i18n="ui.routeValley">✦ VALLEY</span></div>
+                <dl class="ending-stats"><div><dt data-i18n="ui.score">SCORE</dt><dd id="ending-score">0</dd></div><div><dt data-i18n="ui.fireflies">FIREFLIES</dt><dd id="ending-fireflies">0</dd></div><div><dt data-i18n="ui.journeyTime">JOURNEY TIME</dt><dd id="ending-time">0:00</dd></div></dl>
+              </div>
+              <button class="primary-button" id="primary" type="button">Begin the journey <span aria-hidden="true">→</span></button>
+              <button class="primary-button" id="resume-button" type="button" data-i18n-html="ui.resumeSave" hidden>Resume saved game <span aria-hidden="true">→</span></button>
+              <div class="overlay-actions">
+                <button class="secondary-button" id="new-game" type="button" data-i18n="ui.newGame" hidden>New adventure</button>
+              </div>
+              <span class="overlay-hint" id="overlay-hint">ARROWS — MOVE · SPACE — JUMP · X — MAGIC · C — BOOTS</span>
+            </div>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+
+        <div class="game-footer">
+          <span class="journey-label"><span class="tiny-moon" aria-hidden="true">☾</span><span id="journey">A forest path awaits you</span></span>
+          <div class="progress-track" role="progressbar" data-i18n-aria-label="ui.progress" aria-label="Journey progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><div id="progress-fill"></div></div>
+          <span class="end-label" id="end-label">FOUR CHAPTERS <span aria-hidden="true">✧</span></span>
+        </div>
+      </section>
+
+      <div class="touch-controls" data-i18n-aria-label="ui.touchControls" aria-label="Touch controls">
+        <div><button data-control="left" type="button" data-i18n-aria-label="ui.left" aria-label="Move left">←</button><button data-control="right" type="button" data-i18n-aria-label="ui.right" aria-label="Move right">→</button></div>
+        <div><button data-control="boots" class="touch-boots" type="button" aria-label="Activate rocket boots" disabled>↟<small data-i18n="ui.bootsShort">BOOTS</small></button><button data-control="cast" class="touch-magic" type="button" data-i18n-aria-label="ui.cast" aria-label="Cast a spell">✦</button><button data-control="jump" type="button" data-i18n-aria-label="ui.jump" aria-label="Jump">↑</button></div>
+      </div>
+
+      <dialog id="music-dialog" class="music-dialog" aria-labelledby="music-dialog-title">
+        <div class="music-dialog-heading">
+          <div><p class="eyebrow" data-i18n="credits.eyebrow">THE SOUNDS OF WANDMOSS JOURNEY</p><h2 id="music-dialog-title" data-i18n="credits.title">Music and licenses</h2></div>
+          <button id="close-music-credits" class="secondary-button" type="button" data-i18n="credits.close" autofocus>Close</button>
+        </div>
+        <p class="music-credit-intro" data-i18n-html="credits.intro">All recordings below: <strong>Kevin MacLeod</strong> (<a href="https://incompetech.com/" target="_blank" rel="noopener noreferrer">incompetech.com</a>).<br>License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 (CC BY 4.0)</a>.</p>
+        <ol class="music-track-list">
+          <li><div><strong lang="en">Fairytale Waltz</strong><span data-i18n="credits.sceneFairytale">Menu and adventure ending</span></div><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="credits.sourceFairytale" aria-label="Fairytale Waltz — recording source" data-i18n="credits.source">Source ↗</a></li>
+          <li><div><strong lang="en">Folk Round</strong><span data-i18n="credits.sceneForest">Firefly Forest and return to the valley</span></div><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="credits.sourceForest" aria-label="Folk Round — recording source" data-i18n="credits.source">Source ↗</a></li>
+          <li><div><strong lang="en">Evening Fall (Harp)</strong><span data-i18n="credits.sceneDusk">Dusk Trail</span></div><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="credits.sourceDusk" aria-label="Evening Fall (Harp) — recording source" data-i18n="credits.source">Source ↗</a></li>
+          <li><div><strong lang="en">Enchanted Journey</strong><span data-i18n="credits.sceneSky">Cloud Gardens</span></div><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="credits.sourceSky" aria-label="Enchanted Journey — recording source" data-i18n="credits.source">Source ↗</a></li>
+          <li><div><strong lang="en">Call to Adventure</strong><span data-i18n="credits.sceneBoss">Duel with the Guardian of the Valley</span></div><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="credits.sourceBoss" aria-label="Call to Adventure — recording source" data-i18n="credits.source">Source ↗</a></li>
+        </ol>
+        <p class="music-playback-note" data-i18n="credits.playback">The recording files are unchanged. In the game, music repeats and its volume fades during transitions. Fairytale Waltz and Evening Fall (Harp) contain a supplied copyright notice: 2005.</p>
+        <div class="music-license-note">
+          <p data-i18n-html="credits.scope">The game code and original assets use the <a href="LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a>. The recordings above retain their separate CC BY 4.0 license.</p>
+          <p><a href="THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener noreferrer" data-i18n="credits.notices">Full music credits</a> <span aria-hidden="true">·</span> <a href="assets/music/CC-BY-4.0.txt" target="_blank" rel="noopener noreferrer" data-i18n="credits.offlineLicense">Complete CC BY 4.0 license available offline</a></p>
+        </div>
+      </dialog>
+    </div>
+
+    <section class="field-guide" data-i18n-aria-label="guide.label" aria-label="Game tips">
+      <div class="guide-heading"><span class="eyebrow" data-i18n="guide.title">POCKET FIELD GUIDE</span><span class="guide-rule"></span><span class="guide-note" data-i18n="guide.note">Everything a little wizard needs.</span></div>
+      <div class="guide-grid">
+        <div class="guide-item"><span class="guide-icon" aria-hidden="true">↟</span><div><h3 data-i18n="guide.moveTitle">Light footsteps</h3><p data-i18n-html="guide.move"><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> — run<br><kbd>SPACE</kbd> — jump. Hold to jump higher.</p></div></div>
+        <div class="guide-item"><span class="guide-icon magic-icon" aria-hidden="true">✧</span><div><h3 data-i18n="guide.magicTitle">A little magic</h3><p data-i18n-html="guide.magic">Hold <kbd>X</kbd> or <kbd>J</kbd> — one spell per second.<br>Face the boss. Cast as you land.</p></div></div>
+        <div class="guide-item"><span class="guide-icon lantern-icon" aria-hidden="true">♧</span><div><h3 data-i18n="guide.lanternTitle">Follow the light</h3><p data-i18n-html="guide.lantern">Lanterns remember your path.<br>Fireflies are treasures — collect all you can.</p></div></div>
+        <div class="guide-item"><span class="guide-icon boots-icon" aria-hidden="true">↟</span><div><h3 data-i18n="guide.bootsTitle">Boots above the clouds</h3><p data-i18n-html="guide.boots">Find the artifact in chapter three. <kbd>C</kbd> activates the boots.<br>30 s of high jumps, then 15 s to recover.</p></div></div>
+      </div>
+    </section>
+    <footer class="page-footer"><span data-i18n-html="page.footer">WANDMOSS JOURNEY <span class="footer-dot">·</span> FOUR CHAPTERS, ONE STORY</span><span data-i18n-html="page.shortcuts"><kbd>P</kbd> pause <span class="footer-dot">·</span> <kbd>R</kbd> retry <span class="footer-dot">·</span> <kbd>SHIFT</kbd> + <kbd>R</kbd> new adventure</span></footer>
+    <noscript><p class="no-script" data-i18n="page.noScript">Enable JavaScript in your browser to play.</p></noscript>
+  </main>
+</body>
+</html>
