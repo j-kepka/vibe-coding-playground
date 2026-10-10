@@ -29,7 +29,7 @@ Copy `01-prismellow/` and open `index.html`; no server or installation is needed
 
 ![Prismellow gameplay with English controls](01-prismellow/docs/screenshots/prismellow-desktop.png)
 
-[Play](01-prismellow/index.html) · [Instructions](01-prismellow/README.md) ·
+[Play](https://j-kepka.github.io/vibe-coding-playground/01-prismellow/) · [Instructions](01-prismellow/README.md) ·
 [Development process](01-prismellow/docs/DEVELOPMENT_PROCESS.md) ·
 [AI Transformation Outcomes](01-prismellow/AI_TRANSFORMATION_OUTCOMES.md)
 

@@ -13,6 +13,8 @@ chimes took shape. Prismellow grew through those small iterations.
 
 ## Play
 
+[Play online](https://j-kepka.github.io/vibe-coding-playground/01-prismellow/).
+
 Copy this folder and open `index.html` in your browser. It runs offline, with no
 installation or server.
 
