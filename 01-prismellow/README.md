@@ -25,3 +25,5 @@ does not transfer scores; storage availability depends on the browser.
 
 [Development process](docs/DEVELOPMENT_PROCESS.md) ·
 [Documented outcomes](AI_TRANSFORMATION_OUTCOMES.md)
+
+Licensed under the [MIT License](LICENSE).

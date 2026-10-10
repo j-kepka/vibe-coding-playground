@@ -1,7 +1,7 @@
 # Prismellow — rebuilding a remembered game with Codex
 
 **Date:** 2026-10-04
-**Status:** Draft
+**Status:** Validated
 **Client type:** Personal learning project; one participant
 **AI solution:** Codex, iterative development and browser verification
 **Author:** Jarosław Kępka
@@ -20,31 +20,42 @@ I described the mechanics from memory and built it with Codex.
 
 ## Intervention
 
-I started with a playable prototype built with Codex and repeated
-prompt → play → check → refine. I played each version and chose the next changes;
-Codex implemented them and ran technical checks.
-I requested dragging, graphics, procedural music, crystal chimes, PL/EN/DE
-and a local Top 10. The final game runs from `index.html` offline.
+I started with a playable prototype built with Codex and repeated:
+prompt → play → check → refine.
 
-My revised estimate for the original build: ~3 h of active human work within a ~6 h elapsed window, including waits for Codex usage limits to reset. Later documentation and project cleanup are excluded.
+I played each version and chose the next changes; Codex implemented them and ran technical checks.
+I requested dragging, graphics, procedural music, crystal chimes, PL/EN/DE and a local Top 10. The final game runs from `index.html` offline.
+
+My requirements evolved through playtesting. I wanted remembered match-three
+mechanics and simple local distribution: copy the folder and open `index.html`,
+with no installation, server or external runtime dependencies. I rejected a
+server-backed leaderboard to preserve that copy-and-open workflow.
+
+My revised estimate for the original build: ~3 h of active human work within a ~6 h elapsed window, including waits for Codex usage limits to reset. Later documentation, project setup and publication work are excluded.
 
 ## Measurable outcome
 
 - **Time saved:** Not measured; no comparable build without AI was timed.
 - **Quality improvement:** A playable match-three game with cascades, scoring, invalid-swap rollback and local results.
-- **Adoption or participation:** I provided playtesting feedback; three interface languages delivered.
-- **Business impact:** A personal learning artifact; revenue and ROI were not measured.
+- **Adoption or participation:** I provided playtesting feedback.
+- **Business impact:** Not applicable — personal learning project; revenue and ROI were not measured.
 
 ## Evidence
 
 - [Playable game](index.html) and [instructions](README.md).
+- [Later maintenance checks](docs/VERIFICATION.md), with procedures, results and limitations for the current game.
 - Historical checks: 200 random boards and 50 legal moves reaching 3,700 points before the final Top 10. The original test package was not retained.
 - Recorded gross tokens from an earlier reading of local Codex session logs: approximately **27.6 million** — main sessions 22.2 million (80.6%), subagents 5.4 million (19.4%). The historical aggregation was not rerun for this review; these counts do not establish actual AI cost or financial return.
 
 ## Human lesson
 
-I judged how the game felt and chose simple local distribution.
+I judged how the game felt, chose the scope and kept technical choices aligned with the intended simple user experience.
 My playtesting, feedback and judgment remained necessary alongside Codex's technical checks.
+
+I would record important product decisions as they happen and retain reproducible verification from the beginning instead of reconstructing part of the process retrospectively.
+
+This project demonstrates how I turn an evolving idea into requirements, direct
+and evaluate an AI coding agent, and document decisions, evidence and limitations.
 
 ## Reusable asset
 

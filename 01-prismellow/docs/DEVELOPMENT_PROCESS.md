@@ -61,8 +61,8 @@ they do not validate the original intermediate versions. See the
 Preliminary name and trademark searches led me to replace the working title
 Diamond Mines with Prismellow. I learned to consider naming, asset provenance
 and distribution terms alongside functionality. This was an initial risk check,
-not comprehensive legal clearance. The project's distribution license remains
-undecided.
+not comprehensive legal clearance. The project's distribution license was
+undecided during these checks.
 
 ### Limited provenance review
 
@@ -81,12 +81,12 @@ soundtracks or artwork was performed.
 The earlier name check remains preliminary. Its exact queries and results are
 not retained with the project; registry evidence therefore remains incomplete.
 These checks describe the reviewed implementation and search scope. They do not
-certify originality or establish trademark clearance. The distribution license
-remains undecided.
+certify originality or establish trademark clearance.
 
 Name checks concern potential [trademark conflicts](https://www.dpma.de/english/trade_marks/trade_mark_search/index.html).
 Code, artwork and audio raise questions about [copyright](https://www.wipo.int/en/web/copyright/protection)
-and any third-party licenses. Choosing [the project's distribution license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-is a separate decision.
+and any third-party licenses. I have since chosen the [MIT License](../LICENSE)
+for the repository; this distribution decision is separate from the provenance
+and name checks.
 
 [Play instructions](../README.md) · [Documented outcomes](../AI_TRANSFORMATION_OUTCOMES.md)
