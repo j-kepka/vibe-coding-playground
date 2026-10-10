@@ -1,9 +1,9 @@
 # Prismellow — rebuilding a remembered game with Codex
 
-**Date:** 2026-10-04
-**Status:** Validated
-**Client type:** Personal learning project; one participant
-**AI solution:** Codex, iterative development and browser verification
+**Date:** 2026-10-04\
+**Status:** Published\
+**Client type:** Personal learning project; one participant\
+**AI solution:** Codex, iterative development and browser verification\
 **Author:** Jarosław Kępka
 
 ## Problem
