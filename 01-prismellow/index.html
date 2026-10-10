@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a27">
+  <meta data-i18n-content="description" name="description" content="Prismellow — a classic match-three gem game. Match three, trigger cascades and collect points.">
+  <title>Prismellow — small board, big cascades</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%235de1d5' d='M16 8h32l14 18-30 34L2 26z'/%3E%3Cpath fill='%23bffff4' d='m16 8 16 18H2zm32 0 14 18H32z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="leaderboard.js" defer></script>
+  <script src="game.js" defer></script>
+  <script src="music.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <div class="brand"><svg class="brand-gem" viewBox="0 0 64 64" aria-hidden="true"><path d="M16 10h32l13 17-29 33L3 27Z" fill="#53bdba"/><path d="M16 10h32L32 27H3Z" fill="#aff9ea"/><path d="m48 10 13 17H32Z" fill="#7ee4db"/><path d="m16 10 16 17H3Z" fill="#e0fff5"/><path d="m3 27 29 33-9-33Z" fill="#3a929e"/><path d="m23 27 9 33 9-33Z" fill="#a7fff0"/><path d="m41 27-9 33 29-33Z" fill="#65cecd"/><path d="M16 10h32l13 17-29 33L3 27Z" fill="none" stroke="#c9fff3" stroke-opacity=".65"/></svg><div><p class="eyebrow" data-i18n="tagline">JUST ONE MORE CASCADE</p><h1>Prism<span>ellow</span></h1></div></div>
+      <div class="audio-controls">
+        <label class="language-control"><span class="visually-hidden" data-i18n="languageLabel">Game language</span><select id="language" aria-label="Game language" data-i18n-aria-label="languageLabel"><option value="pl">Polski</option><option value="en" selected>English</option><option value="de">Deutsch</option></select></label>
+        <button id="music" class="music-switch" type="button" aria-pressed="false" aria-label="Turn music on" data-i18n-aria-label="musicOn" data-i18n-title="musicOn" title="Turn music on"><span aria-hidden="true">♫</span><span data-i18n="music">Music</span><span class="switch-track" aria-hidden="true"><span></span></span></button>
+        <button id="sound" class="icon-button" type="button" aria-label="Turn gem sounds on" data-i18n-aria-label="soundOn" data-i18n-title="soundTitle" aria-pressed="false" title="Gem sounds">♬</button>
+      </div>
+    </header>
+    <div class="layout">
+      <section class="play-area" aria-label="Game board" data-i18n-aria-label="playAreaLabel">
+        <div class="board-heading"><span><i></i> <span data-i18n="mode">CLASSIC MODE</span></span><span>8 × 8</span></div>
+        <div class="board-frame"><div id="board" role="group" aria-label="Gems: select two adjacent squares" data-i18n-aria-label="boardLabel" aria-busy="false"></div></div>
+        <p id="status" class="status" role="status" aria-live="polite">Find your first match of three.</p>
+        <div class="board-footer"><span data-i18n="noTimeLimit">Take your time. No time limit.</span><span class="sparkle">✧</span></div>
+      </section>
+      <aside class="sidebar">
+        <section class="score-card"><p class="eyebrow" data-i18n="scoreLabel">YOUR SCORE</p><div id="score" class="score">0</div><div class="record"><span data-i18n="bestLabel">Best score</span><strong id="best">0</strong></div><button id="leaderboard-open" class="leaderboard-link" type="button"><span aria-hidden="true">♛</span> <span data-i18n="leaderboardOpen">Leaderboard</span><span aria-hidden="true">↗</span></button></section>
+        <section class="level-card"><div class="level-line"><span><span data-i18n="levelLabel">Level</span> <strong id="level">1</strong></span><span id="progress-label">0 / 1000</span></div><progress id="progress" max="1000" value="0" aria-label="Progress to the next level" data-i18n-aria-label="levelProgress"></progress><p data-i18n="cascadeTip">Every cascade means more points.</p></section>
+        <div class="actions"><button id="hint" class="button secondary"><span aria-hidden="true">✧</span> <span data-i18n="hint">Hint</span></button><button id="new-game" class="button primary"><span aria-hidden="true">↻</span> <span data-i18n="newGame">New game</span></button><button id="finish-game" class="button secondary"><span aria-hidden="true">⚑</span> <span data-i18n="finishGame">End game</span></button></div>
+        <section class="instructions"><p class="eyebrow" data-i18n="howToPlay">HOW TO PLAY</p><div><span class="step">01</span><p data-i18n="instruction1">Drag a gem toward its neighbor and release. You can also click two squares.</p></div><div><span class="step">02</span><p data-i18n="instruction2">Line up 3 or more matching gems in a row or column.</p></div><div><span class="step">03</span><p data-i18n="instruction3">Watch them disappear. Further matches create cascades!</p></div><p class="keyboard" data-i18n="keyboardHelp">Keyboard: arrow keys + Enter. Esc clears the selection.</p></section>
+      </aside>
+    </div>
+    <footer class="page-footer"><span data-i18n="footerTagline">SMALL BOARD. BIG CASCADES.</span><span data-i18n="footerNote">Good old fun, all over again.</span></footer>
+  </main>
+  <dialog id="restart-dialog" aria-labelledby="restart-title"><form method="dialog"><p class="eyebrow" data-i18n="restartEyebrow">A FRESH START</p><h2 id="restart-title" data-i18n="restartTitle">Start a new game?</h2><p data-i18n="restartEndHint">Starting a new game will end this round and show the leaderboard.</p><div class="dialog-actions"><button class="button secondary" value="cancel" data-i18n="keepPlaying">Keep playing</button><button class="button primary" value="restart" data-i18n="newGame">New game</button></div></form></dialog>
+  <dialog id="leaderboard-dialog" class="leaderboard-dialog" aria-labelledby="leaderboard-title">
+    <div class="leaderboard-header"><div><p class="eyebrow">PRISMELLOW</p><h2 id="leaderboard-title" data-i18n="leaderboardTitle">Top 10 scores</h2></div><button id="leaderboard-close" class="icon-button" type="button" data-i18n-aria-label="close" aria-label="Close">×</button></div>
+    <p id="leaderboard-note" class="local-note" data-i18n="leaderboardLocalNote">This leaderboard is saved in this browser.</p>
+    <div class="leaderboard-table-wrap"><table class="leaderboard-table"><thead><tr><th scope="col" data-i18n="rankColumn">Rank</th><th scope="col" data-i18n="playerColumn">Player</th><th scope="col" data-i18n="pointsColumn">Points</th></tr></thead><tbody id="leaderboard-rows"></tbody></table><p id="leaderboard-empty" class="leaderboard-empty" data-i18n="leaderboardEmpty">No scores yet. Earn some points and save your first score!</p></div>
+    <p id="leaderboard-current" class="leaderboard-current" hidden></p>
+    <form id="leaderboard-form" class="leaderboard-form" hidden>
+      <label class="name-label" for="player-name" data-i18n="playerName">Player name</label>
+      <div class="name-row"><input id="player-name" class="name-input" type="text" maxlength="24" autocomplete="nickname" required data-i18n-placeholder="namePlaceholder" placeholder="Enter your name"><button id="save-score" class="button primary" type="submit" data-i18n="saveScore">Save score</button></div>
+    </form>
+    <p id="leaderboard-feedback" class="leaderboard-feedback" role="status" aria-live="polite"></p>
+    <div class="dialog-actions"><button id="leaderboard-retry" class="button secondary" type="button" data-i18n="retry" hidden>Try again</button><button id="leaderboard-new-game" class="button primary" type="button" data-i18n="newGame" hidden>New game</button></div>
+  </dialog>
+</body>
+</html>
