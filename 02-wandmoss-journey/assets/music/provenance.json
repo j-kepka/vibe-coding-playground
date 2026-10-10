@@ -1,0 +1,141 @@
+{
+  "retrieved": "2026-10-09",
+  "author": "Kevin MacLeod (incompetech.com)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "catalog_url": "https://incompetech.com/music/royalty-free/pieces.json",
+  "files": [
+    {
+      "file": "call-to-adventure.mp3",
+      "title": "Call to Adventure",
+      "isrc": "USUAN1300022",
+      "duration_catalog": "00:04:07",
+      "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Call%20to%20Adventure.mp3",
+      "bytes": 9894055,
+      "sha256": "0e641ec59779e5bf0236eaa2a952f6f050633d6cce49a7bb5ab6802dec970772",
+      "content_type": "application/octet-stream",
+      "duration_seconds": 247.248975,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "metadata_notices": {
+        "title": "Call to Adventure",
+        "artist": "Kevin MacLeod",
+        "TCM": "Kevin MacLeod",
+        "date": "2013-03-20 20:42"
+      },
+      "file_modifications": "None; original bytes retained, local filename changed only."
+    },
+    {
+      "file": "enchanted-journey.mp3",
+      "title": "Enchanted Journey",
+      "isrc": "USUAN1100799",
+      "duration_catalog": "00:04:30",
+      "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Enchanted%20Journey.mp3",
+      "bytes": 10784428,
+      "sha256": "9ada17171c3f3b4034ca390e3bd01bd9af0bb8625659a8e5f1fbbb8756c7f750",
+      "content_type": "application/octet-stream",
+      "duration_seconds": 269.55755,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "metadata_notices": {
+        "title": "Enchanted Journey",
+        "artist": "Kevin MacLeod",
+        "TCM": "Kevin MacLeod",
+        "date": "2011"
+      },
+      "file_modifications": "None; original bytes retained, local filename changed only."
+    },
+    {
+      "file": "folk-round.mp3",
+      "title": "Folk Round",
+      "isrc": "USUAN1100357",
+      "duration_catalog": "00:03:04",
+      "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Folk%20Round.mp3",
+      "bytes": 7472358,
+      "sha256": "b4e6aa7d67bb05a269b6f916662355358b6e849d29b81f5185f211a31fdb8051",
+      "content_type": "application/octet-stream",
+      "duration_seconds": 183.745325,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "metadata_notices": {
+        "title": "Folk Round",
+        "artist": "Kevin MacLeod",
+        "TCM": "Kevin MacLeod",
+        "date": "2007"
+      },
+      "file_modifications": "None; original bytes retained, local filename changed only."
+    },
+    {
+      "file": "evening-fall-harp.mp3",
+      "title": "Evening Fall (Harp)",
+      "isrc": "USUAN1100236",
+      "duration_catalog": "00:02:25",
+      "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Evening%20Fall%20-%20Harp.mp3",
+      "bytes": 4759305,
+      "sha256": "7899334b322d0b651801c3f2f0c70adb4704871863ca6fa2de1f0d84f593ee65",
+      "content_type": "application/octet-stream",
+      "duration_seconds": 145.218689,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "metadata_notices": {
+        "title": "Evening Fall - Harp",
+        "artist": "Kevin MacLeod",
+        "composer": "Kevin MacLeod",
+        "copyright": "2005",
+        "comment": "incompetech.com",
+        "date": "2005"
+      },
+      "file_modifications": "None; original bytes retained, local filename changed only."
+    },
+    {
+      "file": "fairytale-waltz.mp3",
+      "title": "Fairytale Waltz",
+      "isrc": "USUAN1100232",
+      "duration_catalog": "00:01:39",
+      "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232",
+      "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fairytale%20Waltz.mp3",
+      "bytes": 3279372,
+      "sha256": "d92096ef844e9e25d1d3d796f2f4c6b21d2e684af15c9d959699b17d3c96e834",
+      "content_type": "application/octet-stream",
+      "duration_seconds": 99.269313,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      },
+      "metadata_notices": {
+        "title": "FairyTale Waltz",
+        "artist": "Kevin MacLeod",
+        "composer": "Kevin MacLeod",
+        "copyright": "2005",
+        "comment": "incompetech.com",
+        "date": "2005"
+      },
+      "file_modifications": "None; original bytes retained, local filename changed only."
+    }
+  ],
+  "license_evidence": {
+    "track_page_template": "https://incompetech.com/music/royalty-free/index.html",
+    "attribution_template": "\"{title}\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0 License\nhttp://creativecommons.org/licenses/by/4.0/",
+    "author_game_use_faq": "https://incompetech.com/music/royalty-free/faq.html",
+    "official_legal_text": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+    "local_legal_text": "CC-BY-4.0.txt",
+    "legal_text_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+  }
+}
