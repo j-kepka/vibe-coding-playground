@@ -1,0 +1,1898 @@
+{
+  "checked_date": "2026-10-10",
+  "checked_by": "Codex",
+  "title": "Wandmoss Journey",
+  "scope": "Bounded live public trademark-register review; title, distinctive root and stated spacing/spelling variants; not comprehensive legal clearance.",
+  "core_inputs": [
+    "Wandmoss Journey",
+    "Wandmoss",
+    "Wand Moss",
+    "Wandmos",
+    "Wand Moss Journey"
+  ],
+  "additional_near_roots": [
+    "Wandermoss",
+    "Wondermoss"
+  ],
+  "relevant_nice_classes": {
+    "9": "Recorded/downloadable game software",
+    "41": "Online game and entertainment services"
+  },
+  "registries": [
+    {
+      "name": "EUIPO eSearch plus",
+      "url": "https://euipo.europa.eu/eSearch/",
+      "queries": [
+        {
+          "query": "Nintendo",
+          "positive_control": true,
+          "submitted_input_value": "Nintendo",
+          "field": "#basicSearchBigInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:07.542647+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Nintendo",
+          "selected_class_filters": [],
+          "count": 129,
+          "explicit_negative": false,
+          "captured_dom_text_sha256": "75537c6e7baa20c72512f6e61eb8372a70442c8e1f3f2a30cb5293b2075b4fc3",
+          "positive_control_sample": {
+            "mark": "NINTENDO ENTERTAINMENT SYSTEM",
+            "trademark_number": "000155242",
+            "owner": "Nintendo Co., Ltd.",
+            "classes": [
+              9,
+              28
+            ],
+            "status": "Registered",
+            "record_source": "Observed first EUIPO result card"
+          }
+        },
+        {
+          "query": "Wandmoss Journey",
+          "positive_control": false,
+          "submitted_input_value": "Wandmoss Journey",
+          "field": "#basicSearchSmallInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:11.707374+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wandmoss%20Journey",
+          "selected_class_filters": [],
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c"
+        },
+        {
+          "query": "Wandmoss",
+          "positive_control": false,
+          "submitted_input_value": "Wandmoss",
+          "field": "#basicSearchSmallInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:15.750963+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wandmoss",
+          "selected_class_filters": [],
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c"
+        },
+        {
+          "query": "Wand Moss",
+          "positive_control": false,
+          "submitted_input_value": "Wand Moss",
+          "field": "#basicSearchSmallInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:19.791042+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wand%20Moss",
+          "selected_class_filters": [],
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c"
+        },
+        {
+          "query": "Wandmos",
+          "positive_control": false,
+          "submitted_input_value": "Wandmos",
+          "field": "#basicSearchSmallInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:23.834082+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wandmos",
+          "selected_class_filters": [],
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c"
+        },
+        {
+          "query": "Wand Moss Journey",
+          "positive_control": false,
+          "submitted_input_value": "Wand Moss Journey",
+          "field": "#basicSearchSmallInput",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "Trade marks plus other default basic-search entity categories; no Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:52:27.877797+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wand%20Moss%20Journey",
+          "selected_class_filters": [],
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c"
+        },
+        {
+          "query": "Wandermoss",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "No Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:56:17.587782+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wandermoss",
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c",
+          "positive_control": false
+        },
+        {
+          "query": "Wondermoss",
+          "operator": "Default basic text search; no explicit exact-match operator selected.",
+          "scope": "No Nice-class/status/owner restriction.",
+          "checked_at_utc": "2026-10-10T12:56:21.644294+00:00",
+          "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Wondermoss",
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c",
+          "positive_control": false
+        }
+      ]
+    },
+    {
+      "name": "WIPO Global Brand Database",
+      "url": "https://branddb.wipo.int/",
+      "queries": [
+        {
+          "query": "Nintendo",
+          "positive_control": true,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:53:32.939514+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22f71f%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22f720%22,%22key%22:%22brandName%22,%22value%22:%22Nintendo%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636807641&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Nintendo",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "f71f",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "f720",
+                "key": "brandName",
+                "value": "Nintendo",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 2442,
+          "explicit_negative": false,
+          "captured_dom_text_sha256": "f25d769d1f780de6899c7625f4379be5509422feed3d1c7df2c1aed218c771bc",
+          "positive_control_sample": {
+            "mark": "Nintendo ; NINTENDO",
+            "owner": "NINTENDO CO., LTD. (Japan)",
+            "classes": [
+              9,
+              35,
+              38,
+              41,
+              42
+            ],
+            "reported_status": "Registered (January 11, 2007)",
+            "country_of_filing": "New Zealand",
+            "registration_number": "743677",
+            "source": "Observed result card in Nintendo control, all default collections"
+          }
+        },
+        {
+          "query": "Wandmoss Journey",
+          "positive_control": false,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:53:39.055645+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%227bd7%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%227bd8%22,%22key%22:%22brandName%22,%22value%22:%22Wandmoss%20Journey%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636813681&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Wandmoss Journey",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "7bd7",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "7bd8",
+                "key": "brandName",
+                "value": "Wandmoss Journey",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 11518,
+          "explicit_negative": false,
+          "qualification": "Broad multi-word Embedded token result count; does not mean marks use this whole title. Separate Match exact expression query retained.",
+          "captured_dom_text_sha256": "847f9ec601356730b31e24c6d36ad22efcdcff25b1407d4cd0c6c025903b20fa"
+        },
+        {
+          "query": "Wandmoss",
+          "positive_control": false,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:53:45.173891+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%2206c4%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%2206c5%22,%22key%22:%22brandName%22,%22value%22:%22Wandmoss%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636819875&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Wandmoss",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "06c4",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "06c5",
+                "key": "brandName",
+                "value": "Wandmoss",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "3e0f5821c276f5a6c067663818360d98efbd71647e5bd91eb1ff24ba5259499f"
+        },
+        {
+          "query": "Wand Moss",
+          "positive_control": false,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:53:50.935314+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22f660%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22f661%22,%22key%22:%22brandName%22,%22value%22:%22Wand%20Moss%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636825848&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Wand Moss",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "f660",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "f661",
+                "key": "brandName",
+                "value": "Wand Moss",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 4389,
+          "explicit_negative": false,
+          "qualification": "Broad multi-word Embedded token result count; does not mean marks use this whole title. Separate Match exact expression query retained.",
+          "captured_dom_text_sha256": "bda1513c8786dafef813893f06ac8c61105b4f5709c32ca4b3dc2a2c0072d45f"
+        },
+        {
+          "query": "Wandmos",
+          "positive_control": false,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:53:56.743611+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22dca0%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22dca1%22,%22key%22:%22brandName%22,%22value%22:%22Wandmos%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636831697&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Wandmos",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "dca0",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "dca1",
+                "key": "brandName",
+                "value": "Wandmos",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "4ad77356f8ea0d90f5bbca55da2f59c2f4c416b6653e7480a4a7238713412931"
+        },
+        {
+          "query": "Wand Moss Journey",
+          "positive_control": false,
+          "operator": "Embedded (results contain entered term), default strategy Simple",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:54:02.925022+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22da5a%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22da5b%22,%22key%22:%22brandName%22,%22value%22:%22Wand%20Moss%20Journey%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791636837587&fg=_void_",
+          "submitted_fields": [
+            {
+              "value": "Wand Moss Journey",
+              "label": "Brand name"
+            },
+            {
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "da5a",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "da5b",
+                "key": "brandName",
+                "value": "Wand Moss Journey",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "count": 15907,
+          "explicit_negative": false,
+          "qualification": "Broad multi-word Embedded token result count; does not mean marks use this whole title. Separate Match exact expression query retained.",
+          "captured_dom_text_sha256": "e5fa51fd9ba59da85d72c9b7f53deda08853bb7ca3e87bf02db586662e73e267"
+        },
+        {
+          "query": "Wandmoss Journey",
+          "operator": "Match exact expression",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:56:30.146980+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%222b47%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%222b48%22,%22key%22:%22brandName%22,%22value%22:%22Wandmoss%20Journey%22,%22strategy%22:%22Terms%22%7D%5D%7D&_=1791636985901&fg=_void_",
+          "submitted_fields": [
+            {
+              "id": "",
+              "value": "Wandmoss Journey",
+              "label": "Brand name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "2b47",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "2b48",
+                "key": "brandName",
+                "value": "Wandmoss Journey",
+                "strategy": "Terms"
+              }
+            ]
+          },
+          "selected_strategy": {
+            "value": "Match exact expression",
+            "index": 2
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "8a4e79d0de2dfd3649bd173303f3ed4a2b6403d11b7f0d0de2f42d9b15ebfca7",
+          "positive_control": false
+        },
+        {
+          "query": "Wand Moss",
+          "operator": "Match exact expression",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:56:38.226659+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%223919%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22391a%22,%22key%22:%22brandName%22,%22value%22:%22Wand%20Moss%22,%22strategy%22:%22Terms%22%7D%5D%7D&_=1791636990827&fg=_void_",
+          "submitted_fields": [
+            {
+              "id": "",
+              "value": "Wand Moss",
+              "label": "Brand name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "3919",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "391a",
+                "key": "brandName",
+                "value": "Wand Moss",
+                "strategy": "Terms"
+              }
+            ]
+          },
+          "selected_strategy": {
+            "value": "Match exact expression",
+            "index": 2
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "6b8e9811552a0ae2d585c3160264df003d10f3e74eb48a687f3ba23e08f5531d",
+          "positive_control": false
+        },
+        {
+          "query": "Wand Moss Journey",
+          "operator": "Match exact expression",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:56:46.320920+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22b430%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22b431%22,%22key%22:%22brandName%22,%22value%22:%22Wand%20Moss%20Journey%22,%22strategy%22:%22Terms%22%7D%5D%7D&_=1791636998884&fg=_void_",
+          "submitted_fields": [
+            {
+              "id": "",
+              "value": "Wand Moss Journey",
+              "label": "Brand name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "b430",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "b431",
+                "key": "brandName",
+                "value": "Wand Moss Journey",
+                "strategy": "Terms"
+              }
+            ]
+          },
+          "selected_strategy": {
+            "value": "Match exact expression",
+            "index": 2
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "a30110bf5314adad518dddec23140269c8841b21d1791951c169925d53b729d4",
+          "positive_control": false
+        },
+        {
+          "query": "Wandermoss",
+          "operator": "Embedded (results contain entered term)",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:56:54.394896+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22a2df%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22a2e0%22,%22key%22:%22brandName%22,%22value%22:%22Wandermoss%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791637007038&fg=_void_",
+          "submitted_fields": [
+            {
+              "id": "",
+              "value": "Wandermoss",
+              "label": "Brand name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "a2df",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "a2e0",
+                "key": "brandName",
+                "value": "Wandermoss",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "selected_strategy": {
+            "value": "Embedded (results contain entered term)",
+            "index": 1
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "b0b09f9190673acaf016339f5c318db20d986d4ff1250f20a951d92a04c39d1d",
+          "positive_control": false
+        },
+        {
+          "query": "Wondermoss",
+          "operator": "Embedded (results contain entered term)",
+          "scope": "All default collections; no owner, IP-office, designation-country, Nice-class or goods-and-services restriction.",
+          "checked_at_utc": "2026-10-10T12:57:02.465579+00:00",
+          "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%2204c2%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%2204c3%22,%22key%22:%22brandName%22,%22value%22:%22Wondermoss%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791637015091&fg=_void_",
+          "submitted_fields": [
+            {
+              "id": "",
+              "value": "Wondermoss",
+              "label": "Brand name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Owner name"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Application / Registration Number"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "IP office"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Designation country"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Nice classification"
+            },
+            {
+              "id": "",
+              "value": "",
+              "label": "Goods and services"
+            }
+          ],
+          "submitted_query_structure": {
+            "_id": "04c2",
+            "boolean": "AND",
+            "bricks": [
+              {
+                "_id": "04c3",
+                "key": "brandName",
+                "value": "Wondermoss",
+                "strategy": "Simple"
+              }
+            ]
+          },
+          "selected_strategy": {
+            "value": "Embedded (results contain entered term)",
+            "index": 1
+          },
+          "count": 0,
+          "explicit_negative": true,
+          "captured_dom_text_sha256": "92656c8468a05376fdb41d0ef7245e0b3e68972eab102c8770c79931364dcdb3",
+          "positive_control": false
+        }
+      ]
+    },
+    {
+      "name": "DPMAregister",
+      "url": "https://register.dpma.de/DPMAregister/marke/basis",
+      "queries": [
+        {
+          "input": "Nintendo",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Nintendo",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/trefferliste",
+          "server_query_expression": "(marke=\"Nintendo\")",
+          "result": "hits",
+          "result_count": 121,
+          "query_verified_as_submitted": true,
+          "positive_control": true
+        },
+        {
+          "input": "Wandmoss Journey",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wandmoss Journey",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmoss\" and marke=\"Journey\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmoss",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wandmoss",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmoss\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wand Moss",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wand Moss",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wand\" and marke=\"Moss\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmos",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wandmos",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmos\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wand Moss Journey",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wand Moss Journey",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wand\" and marke=\"Moss\" and marke=\"Journey\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmoss*",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wandmoss*",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmoss*\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandermoss",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wandermoss",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandermoss\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wondermoss",
+          "class_input": null,
+          "form_fields": {
+            "marke": "Wondermoss",
+            "klassen": "",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wondermoss\")",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmoss",
+          "class_input": "9",
+          "form_fields": {
+            "marke": "Wandmoss",
+            "klassen": "9",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmoss\") and kl=9",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmoss",
+          "class_input": "41",
+          "form_fields": {
+            "marke": "Wandmoss",
+            "klassen": "41",
+            "demarke": true,
+            "emmarke": true,
+            "irmarke": true,
+            "in_force_only": false
+          },
+          "operator": "Term matches joined by AND; * is bounded wildcard where entered",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "server_query_expression": "(marke=\"Wandmoss\") and kl=41",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "query_verified_as_submitted": true,
+          "positive_control": false
+        }
+      ],
+      "limitations": [
+        "This is a bounded text/spelling review, not legal trademark similarity or phonetic clearance. DPMA officially states similarity searching is unavailable.",
+        "DPMA DE/EM/IR query checked defaults include German national, Union and international marks; DPMA disclaims correctness/completeness of the EM/IR data.",
+        "UPRP review queried its direct public national trademark records in BUP/WUP/E-register; the interface states trademark bibliographic data start at application Z.075001 and granted rights at R.000118. It is not a separate exhaustive EU/WIPO or unregistered-rights search.",
+        "No Wandmoss candidate records surfaced in unrestricted-class/status searches, so no candidate goods/services needed assessment. Class 9 (software/downloadable games) and class 41 (online entertainment/game services) remain relevant review categories; DPMA root was additionally queried separately in classes 9 and 41. UPRP zero all-class results logically contain no candidate in either category; no separate UPRP class query was necessary.",
+        "Nintendo controls verify the chosen search flow and scope, not completeness of coverage. Invalid or non-submitting attempts were excluded."
+      ]
+    },
+    {
+      "name": "UPRP e-wyszukiwarka",
+      "url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/advanced-search?lng=pl",
+      "queries": [
+        {
+          "input": "Nintendo",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/7f904e15-3640-400c-8ebc-50787e53b95f",
+          "result": "hits",
+          "result_count": 10,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Nintendo\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Nintendo\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Nintendo"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": true
+        },
+        {
+          "input": "Wandmoss Journey",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/92ab36cb-73b9-4ee4-94a2-e0f4460f8727",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmoss Journey\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmoss Journey\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wandmoss Journey"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmoss",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/11be54d3-5c25-463a-8430-153953771487",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmoss\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmoss\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wandmoss"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wand Moss",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/5a6f8a18-c606-44f2-b827-69d9572988bb",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wand Moss\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wand Moss\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wand Moss"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wandmos",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/0c52da18-c93e-4e96-9755-613c97128d3b",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmos\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandmos\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wandmos"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wand Moss Journey",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/17df91bb-8440-4f02-9ae9-fbc09a5d3cfa",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wand Moss Journey\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wand Moss Journey\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wand Moss Journey"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wandermoss",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/e5c2f245-dd36-449d-af44-f8a7bb822581",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandermoss\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wandermoss\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wandermoss"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        },
+        {
+          "input": "Wondermoss",
+          "operator": "contains",
+          "final_url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/search-results/371c0797-e88b-4641-add8-b3073c17adde",
+          "result": "explicit_no_hits",
+          "result_count": 0,
+          "field": "Nazwa/Tytuł",
+          "classes_restricted": false,
+          "status_restricted": false,
+          "form_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wondermoss\")",
+          "result_query_echo": "(Nazwa/Tytuł ZAWIERA \"Wondermoss\")",
+          "search_requests": [
+            {
+              "url": "https://ewyszukiwarka.pue.uprp.gov.pl/ewyszukiwarka/api/v2/deterministic-search",
+              "method": "POST",
+              "search_payload": {
+                "attributes": {
+                  "type": "group",
+                  "conditions": [
+                    {
+                      "type": "condition",
+                      "operator": "contains",
+                      "attribute": {
+                        "id": 170,
+                        "name": "nazwa_znaku_tytul",
+                        "formType": "string"
+                      },
+                      "value": [
+                        "Wondermoss"
+                      ]
+                    }
+                  ],
+                  "operator": "and"
+                },
+                "includeDiacritical": true,
+                "pwpTypes": [
+                  1
+                ],
+                "collections": [
+                  1,
+                  2,
+                  3
+                ],
+                "subCollections": []
+              }
+            }
+          ],
+          "query_verified_as_submitted": true,
+          "data_updated_notice": null,
+          "positive_control": false
+        }
+      ],
+      "limitations": [
+        "This is a bounded text/spelling review, not legal trademark similarity or phonetic clearance. DPMA officially states similarity searching is unavailable.",
+        "DPMA DE/EM/IR query checked defaults include German national, Union and international marks; DPMA disclaims correctness/completeness of the EM/IR data.",
+        "UPRP review queried its direct public national trademark records in BUP/WUP/E-register; the interface states trademark bibliographic data start at application Z.075001 and granted rights at R.000118. It is not a separate exhaustive EU/WIPO or unregistered-rights search.",
+        "No Wandmoss candidate records surfaced in unrestricted-class/status searches, so no candidate goods/services needed assessment. Class 9 (software/downloadable games) and class 41 (online entertainment/game services) remain relevant review categories; DPMA root was additionally queried separately in classes 9 and 41. UPRP zero all-class results logically contain no candidate in either category; no separate UPRP class query was necessary.",
+        "Nintendo controls verify the chosen search flow and scope, not completeness of coverage. Invalid or non-submitting attempts were excluded."
+      ]
+    },
+    {
+      "name": "USPTO Trademark Search",
+      "url": "https://tmsearch.uspto.gov/",
+      "positive_controls": [
+        {
+          "checked_at_utc": "2026-10-10T12:52:07.416306+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "Nintendo",
+          "query_echo": "Nintendo",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 67,
+            "dead": 136,
+            "total": 203
+          },
+          "result_status": "203 results for Nintendo",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "5ee2ea11792ea2d6e5e5845d8065dbd477025cceb735c749a864d8512306cb31"
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:53:32.867938+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:\"SUPER MARIO BROS\"",
+          "query_echo": "CM:\"SUPER MARIO BROS\"",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "total": 14,
+            "live": 7,
+            "live_registered": 6,
+            "live_pending": 1,
+            "dead": 7,
+            "dead_cancelled": 6,
+            "dead_abandoned": 1
+          },
+          "result_status": "14 results for CM:\"SUPER MARIO BROS\"",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "5adb2a9c2b1954e394486028199a285d670889e0da00f53e0fc47ab8ef0865a9",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:\"SUPER MARIO BROS\"",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ],
+          "status_count_basis": "All 14 visible result cards on Page 1 of 1; classifications counted from card statuses.",
+          "example_records": [
+            {
+              "wordmark": "SUPER MARIO BROS. WONDER",
+              "serial": "79388956",
+              "status": "LIVE REGISTERED",
+              "international_classes": [
+                "009"
+              ],
+              "owner": "Nintendo of America Inc.",
+              "goods_services_excerpt_summary": "Recorded and downloadable electronic game programs.",
+              "official_record_url": "https://tmsearch.uspto.gov/summary?serial=79388956"
+            },
+            {
+              "wordmark": "SUPER MARIO BROS.",
+              "serial": "75720625",
+              "status": "LIVE REGISTERED",
+              "international_classes": [
+                "009"
+              ],
+              "owner": "Nintendo of America Inc.",
+              "official_record_url": "https://tmsearch.uspto.gov/summary?serial=75720625"
+            }
+          ]
+        }
+      ],
+      "queries": [
+        {
+          "checked_at_utc": "2026-10-10T12:53:36.907273+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:\"Wandmoss Journey\"",
+          "query_echo": "CM:\"Wandmoss Journey\"",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "3309ea1113ae99c0655ddc8596da96a42af0716103c06223fdd1d2cb44351394",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:\"Wandmoss Journey\"",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ]
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:53:40.937392+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:Wandmoss",
+          "query_echo": "CM:Wandmoss",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "3309ea1113ae99c0655ddc8596da96a42af0716103c06223fdd1d2cb44351394",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:Wandmoss",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ]
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:53:44.980788+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:\"Wand Moss\"",
+          "query_echo": "CM:\"Wand Moss\"",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "3309ea1113ae99c0655ddc8596da96a42af0716103c06223fdd1d2cb44351394",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:\"Wand Moss\"",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ]
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:53:49.015423+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:Wandmos",
+          "query_echo": "CM:Wandmos",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "3309ea1113ae99c0655ddc8596da96a42af0716103c06223fdd1d2cb44351394",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:Wandmos",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ]
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:53:53.056152+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "CM:\"Wand Moss Journey\"",
+          "query_echo": "CM:\"Wand Moss Journey\"",
+          "mode": "Field tag and Search builder",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "3309ea1113ae99c0655ddc8596da96a42af0716103c06223fdd1d2cb44351394",
+          "verified_native_submission": [
+            {
+              "official_endpoint": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+              "method": "POST",
+              "query_string": {
+                "query": "CM:\"Wand Moss Journey\"",
+                "default_operator": "OR"
+              },
+              "additional_constraints": []
+            }
+          ]
+        }
+      ],
+      "incomplete_queries": [
+        {
+          "query": "CM:*wandmos*",
+          "status": "Native search was attempted after the five completed advanced queries; results did not render and the expected searchbar disappeared. Count and result status unverified.",
+          "verified_result_count": null
+        },
+        {
+          "query": "CM:wand AND CM:moss",
+          "status": "Not submitted after preceding page interruption.",
+          "verified_result_count": null
+        },
+        {
+          "query": "(CM:*wandmos* OR CM:\"wand moss\") AND IC:(009 041)",
+          "status": "Not submitted after preceding page interruption.",
+          "verified_result_count": null
+        },
+        {
+          "query": "CM:Wandermoss",
+          "status": "Requested as additional near-root comparison after search access was blocked; not submitted.",
+          "verified_result_count": null
+        },
+        {
+          "query": "CM:Wondermoss",
+          "status": "Requested as additional near-root comparison after search access was blocked; not submitted.",
+          "verified_result_count": null
+        }
+      ],
+      "limitations": [
+        "Federal register review only; state and common-law rights were not searched.",
+        "CM combines literal mark, pseudo-mark and translations. Phrase queries match the phrase within a mark rather than requiring it to be the entire mark.",
+        "Completed searches cover the specified exact/root/spacing spellings, not every phonetic, conceptual or visual similarity.",
+        "Wandermoss and Wondermoss additional near-root register searches remain unavailable; no zero result is claimed for them.",
+        "Unrestricted all-class absence makes a class 009/041 result empty for these same five queries; broader wildcard and independent class-filter searches were interrupted.",
+        "A negative bounded result does not establish free use or decide likelihood of confusion.",
+        "Search screens are transient; retained query syntax, server query echo, actual counts, timestamps and digest document this observation. Full webpage prose is omitted."
+      ]
+    }
+  ],
+  "inaccessible_services": [
+    {
+      "service": "TMview",
+      "attempted_url": "https://www.tmdn.org/tmview/",
+      "final_url": "https://www.tmdn.org/error/revise.html",
+      "title": "Problem detected",
+      "observed": "Our website has detected a problem when accessing this page from your computer.",
+      "search_submitted": false,
+      "count": null,
+      "qualification": "Access error before search form; no registry result obtained. No control bypass or repeated retries."
+    }
+  ],
+  "method_corrections": {
+    "dpma": "Initial concatenated/stale inputs were excluded; corrected rows verify exact form values and fresh server query echoes, with Nintendo 121 as control.",
+    "uprp": "Initial non-submitting control and results-shape handling were corrected; retained rows verify actual Name/Title CONTAINS payload and matching result echo.",
+    "wipo": {
+      "issue": "Clicking an option element directly had no rendered target; WIPO stayed on Embedded instead of changing to Match exact expression. Query-state validation caught the unchanged Simple strategy. These repeated broad counts are not phrase-search results.",
+      "attempts": [
+        {
+          "query": "Wandmoss Journey",
+          "actual_strategy": "Simple",
+          "count": 11518,
+          "checked_at_utc": "2026-10-10T12:54:55.099432+00:00"
+        },
+        {
+          "query": "Wand Moss",
+          "actual_strategy": "Simple",
+          "count": 4389,
+          "checked_at_utc": "2026-10-10T12:55:03.214143+00:00"
+        },
+        {
+          "query": "Wand Moss Journey",
+          "actual_strategy": "Simple",
+          "count": 15907,
+          "checked_at_utc": "2026-10-10T12:55:11.310778+00:00"
+        }
+      ],
+      "correction": "Use native select focus and ArrowDown/Enter, verify selected strategy before submitting and verify serialized strategy in the resulting URL."
+    },
+    "uspto": {
+      "description": "Quoted multiword text entered in basic Wordmark mode produced broad component-term results rather than the intended exact phrase. These are preliminary query outcomes only and were replaced by completed CM field-tag exact-phrase searches. They are not exact phrase matches.",
+      "attempts": [
+        {
+          "checked_at_utc": "2026-10-10T12:52:12.501041+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "\"Wandmoss Journey\"",
+          "query_echo": "\"Wandmoss Journey\"",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 1834,
+            "dead": 2978,
+            "total": 4812
+          },
+          "result_status": "4,812 results for \"Wandmoss Journey\"",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "ea9ec54c4e6b570777f192048c35de0cc22c092a87c23abe8a3071082c1f047c"
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:52:17.561902+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "Wandmoss",
+          "query_echo": "Wandmoss",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "a920481a9a858cd467fbee26fcec4640ec04d8f2ea32bb3a4b1044bd490d1a86"
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:52:22.637319+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "\"Wand Moss\"",
+          "query_echo": "\"Wand Moss\"",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 541,
+            "dead": 1069,
+            "total": 1610
+          },
+          "result_status": "1,610 results for \"Wand Moss\"",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "04da1094d0a50b9c6c5fadf205e8c8f427d62e6ae90ed6efda503161ca7a3e3b"
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:52:27.698031+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "Wandmos",
+          "query_echo": "Wandmos",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 0,
+            "dead": 0,
+            "total": 0
+          },
+          "result_status": "No results found",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "a920481a9a858cd467fbee26fcec4640ec04d8f2ea32bb3a4b1044bd490d1a86"
+        },
+        {
+          "checked_at_utc": "2026-10-10T12:52:32.769426+00:00",
+          "url": "https://tmsearch.uspto.gov/search/search-results",
+          "query": "\"Wand Moss Journey\"",
+          "query_echo": "\"Wand Moss Journey\"",
+          "mode": "Wordmark",
+          "counts": {
+            "live": 2375,
+            "dead": 4047,
+            "total": 6422
+          },
+          "result_status": "6,422 results for \"Wand Moss Journey\"",
+          "all_classes": true,
+          "all_statuses": true,
+          "captured_dom_text_sha256": "c3b8577a383a0b484e8a8a1347edb823433bfd6abe8f0a01fa1f913e76eb77d6"
+        }
+      ]
+    }
+  },
+  "access_and_environment_notes": {
+    "eu_wipo": "Headless Chrome could not start under the default shell sandbox. Subsequent read-only public-register script was approved via require_escalated.",
+    "uspto": [
+      {
+        "stage": "Initial sandboxed browser start",
+        "observed": "Headless Chrome did not start; owner-authorized read-only escalation succeeded."
+      },
+      {
+        "stage": "Advanced wildcard expansion",
+        "observed": "Search results page lost its expected input element; one fresh session rerun did not expose the search UI."
+      },
+      {
+        "stage": "Final diagnostic",
+        "url": "https://tmsearch.uspto.gov/",
+        "title": "ERROR: The request could not be satisfied",
+        "observed_status": 403,
+        "observed_error": "CloudFront Request blocked.",
+        "action": "Stopped requests; no bypass, alternate identity or access-control changes attempted."
+      }
+    ]
+  },
+  "related_public_use": {
+    "name": "Wandermoss",
+    "kind": "Fictional place in Animal Magica fantasy lore, not the selected title or an identified exact-title game",
+    "source": "https://www.animalmagica.com/about/",
+    "assessment": "Contextual near-name use retained; neither a registry match nor a legal finding of infringement."
+  },
+  "official_guidance_sources": [
+    {
+      "title": "DPMA trademark search limits",
+      "url": "https://www.dpma.de/english/trade_marks/trade_mark_search/index.html"
+    },
+    {
+      "title": "WIPO Global Brand Database coverage",
+      "url": "https://www.wipo.int/en/web/global-brand-database"
+    },
+    {
+      "title": "USPTO federal trademark searching",
+      "url": "https://www.uspto.gov/trademarks/search/federal-trademark-searching"
+    },
+    {
+      "title": "USPTO comprehensive clearance searching",
+      "url": "https://www.uspto.gov/trademarks/search/comprehensive-clearance-search-similar-trademarks"
+    },
+    {
+      "title": "Nice Class 9, 2026",
+      "url": "https://nclpub.wipo.int/enfr/?class_number=9&lang=en&menulang=en&mode=flat&pagination=no&version=20260101"
+    },
+    {
+      "title": "Nice Class 41, 2026",
+      "url": "https://nclpub.wipo.int/enfr/?class_number=41&lang=en&menulang=en&mode=flat&pagination=no&version=20260101"
+    }
+  ],
+  "limitations": [
+    "Bounded title/root/spacing/spelling searches, not exhaustive legal clearance or a comprehensive visual, phonetic and conceptual similarity assessment.",
+    "EUIPO basic text search covers EUTM/IR records in its current database; absence is limited to submitted criteria and current data.",
+    "WIPO default Embedded multi-word searches produced broad individual-token results; their counts are not counts of exact title matches. Exact-expression queries were separately submitted.",
+    "No class or status restrictions were applied, so root/phrase negatives were not created by excluding classes 9 or 41. No returned root or exact-phrase marks were available to inspect for games/software/services.",
+    "WIPO collection coverage is incomplete and differs by participating office; relevant national/regional registers and unregistered rights remain outside these negatives.",
+    "TMview access error prevented searches; unavailable is not a negative result.",
+    "No project files changed, screenshots, contacts, accounts or trademark filings.",
+    "USPTO optional Wandermoss/Wondermoss and wildcard/class-expansion queries were interrupted/unsubmitted after HTTP 403; not zero results.",
+    "UPRP direct queries succeeded today for this title; this does not retrospectively clear earlier unqueried names.",
+    "No exhaustive phonetic, visual or conceptual comparison; no all-country, state-register, company/title/domain or common-law-rights clearance.",
+    "Ordinary Journey/Moss/Wand token marks were not exhaustively reviewed; the submitted distinctive-root and phrase queries define the result scope.",
+    "Snapshot results and known-mark controls do not guarantee complete/current coverage or decide likelihood of confusion."
+  ],
+  "decision": "The defined register-review backlog task is complete with documented scope/access limits; no concrete conflicting registration identified in completed queries. The owner retains publication and name-risk decisions.",
+  "game_changes": false,
+  "screenshots_created": 0,
+  "filings_or_contacts": false,
+  "report": "WANDMOSS_TRADEMARK_REVIEW.md"
+}

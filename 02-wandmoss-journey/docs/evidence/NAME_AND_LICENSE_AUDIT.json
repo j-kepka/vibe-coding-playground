@@ -1,0 +1,1084 @@
+{
+  "checked_date": "2026-10-10",
+  "checked_by": "Codex",
+  "purpose": "Evidence for pre-publication name and asset licence decisions; no formal legal clearance.",
+  "decision": {
+    "rename_priority": "P0, owner requested",
+    "replacement_name_selected": false,
+    "fullscreen": "P1 backlog only, owner explicitly selected",
+    "game_files_modified": false
+  },
+  "international_names": {
+    "audit_date": "2026-10-10",
+    "scope": "Read-only exact and close name use review for Mosslight/MossLight/Moss Light, plus official international trademark search interfaces. No legal clearance opinion and no publication or title change.",
+    "method": "Public publisher/store pages through web browsing; Google Play and Steam exact-title pages additionally fetched directly with HTTP 200. Trademark interfaces inspected in local headless Chrome using DOM text, no screenshots.",
+    "registries": [
+      {
+        "name": "EUIPO eSearch plus",
+        "query": "Mosslight",
+        "method": "Final native basic-search field and Search button with normal animation timing, after a successful Nintendo positive control; both search-field values verified.",
+        "scope": "Basic search, no Nice-class restriction",
+        "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Mosslight",
+        "observed": "Trade marks (0); Designs (0); Owners (0); Representatives (0). No results were found using the criteria introduced.",
+        "trademark_count": 0,
+        "limitations": "Exact bounded basic-name search only. National registers, similar marks beyond the query, and unregistered title/brand rights are outside this result. A negative registry result does not establish free use.",
+        "positive_control": {
+          "query": "Nintendo",
+          "trademark_count": 129,
+          "checked_at_utc": "2026-10-10T12:12:18.440947+00:00"
+        },
+        "confirmed_negative_checked_at_utc": "2026-10-10T12:12:25.585596+00:00"
+      },
+      {
+        "name": "USPTO Trademark Search",
+        "query": "Mosslight",
+        "method": "Final native Wordmark field and Enter with normal animation timing, after a successful Nintendo positive control; searchbar value and both status filters verified.",
+        "scope": "Default Wordmark search; Live and Dead both checked; no international-class filter selected.",
+        "url": "https://tmsearch.uspto.gov/search/search-results",
+        "observed": "No results found; Live 0; Dead 0",
+        "trademark_count": 0,
+        "limitations": "Exact bounded Wordmark query only. Common-law use, state registries and similar marks beyond this exact query are not cleared. A negative federal registry result does not establish free use.",
+        "positive_control": {
+          "query": "Nintendo",
+          "total_results": 203,
+          "live": 67,
+          "dead": 136,
+          "checked_at_utc": "2026-10-10T12:12:34.278009+00:00"
+        },
+        "confirmed_negative_checked_at_utc": "2026-10-10T12:12:41.315993+00:00"
+      },
+      {
+        "name": "TMview",
+        "query": "Mosslight",
+        "strategy": "Contains",
+        "scope": "All available default offices and territories; no Nice-class restriction",
+        "url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=Mosslight",
+        "method": "Final successful native input and Enter in Chrome with normal browser animation timing",
+        "observed": "1-6 of 6; China CNIPA (1); Japan JPO (5); Registered (3), Ended (2), Expired (1)",
+        "trademark_count": 6,
+        "classes": [
+          14,
+          20,
+          21,
+          25
+        ],
+        "records": [
+          {
+            "display_name": "MOSSLIGHT",
+            "office": "China - CNIPA",
+            "application_number": "6303457",
+            "application_date": "2007-09-29",
+            "class": 25,
+            "reported_status": "Registered",
+            "expiry_date": "2030-04-06"
+          },
+          {
+            "display_name": "Ｍｏｓｓｌｉｇｈｔ",
+            "office": "Japan - JPO",
+            "application_number": "2017092461",
+            "application_date": "2017-07-10",
+            "class": 21,
+            "reported_status": "Registered",
+            "expiry_date": "2028-07-06"
+          },
+          {
+            "display_name": "Ｍｏｓｓｌｉｇｈｔ－ＬＥＤ",
+            "office": "Japan - JPO",
+            "application_number": "2017092462",
+            "application_date": "2017-07-10",
+            "class": 21,
+            "reported_status": "Registered",
+            "expiry_date": "2028-07-06"
+          },
+          {
+            "display_name": "モスライト＼ＭＯＳＳＬＩＧＨＴ",
+            "office": "Japan - JPO",
+            "application_number": "2004003123",
+            "application_date": "2004-01-16",
+            "class": 14,
+            "reported_status": "Ended",
+            "expiry_date": "2024-08-06"
+          },
+          {
+            "display_name": "モスライト＼ＭＯＳＳＬＩＧＨＴ",
+            "office": "Japan - JPO",
+            "application_number": "2007006775",
+            "application_date": "2007-01-30",
+            "class": 20,
+            "reported_status": "Expired",
+            "expiry_date": "2017-07-06"
+          },
+          {
+            "display_name": "モスライト＼ＭＯＳＳＬＩＧＨＴ",
+            "office": "Japan - JPO",
+            "application_number": "2004003122",
+            "application_date": "2004-01-16",
+            "class": 25,
+            "reported_status": "Ended",
+            "expiry_date": "2024-08-06"
+          }
+        ],
+        "limitations": "TMview explicitly states that it is not an official register and its information has no legal effect. These are aggregator-reported statuses, not independent confirmations in CNIPA or JPO origin registers. No class 9 or 41 records appeared in this one query. Coverage and updates vary."
+      },
+      {
+        "name": "WIPO Global Brand Database",
+        "query": "Mosslight",
+        "strategy": "Embedded (results contain entered term); result description contains the word Mosslight",
+        "scope": "All default collections, no extra office, designation or Nice-class filters",
+        "url": "https://branddb.wipo.int/en/similarname/results?sort=score%20desc&start=0&rows=30&asStructure=%7B%22_id%22:%22456d%22,%22boolean%22:%22AND%22,%22bricks%22:%5B%7B%22_id%22:%22456e%22,%22key%22:%22brandName%22,%22value%22:%22Mosslight%22,%22strategy%22:%22Simple%22%7D%5D%7D&_=1791633501816&fg=_void_",
+        "method": "Final successful native input and Enter in Chrome with normal browser animation timing",
+        "observed": "Displaying 1-5 of 5 results; all National Trademark Registration, Japan",
+        "trademark_count": 5,
+        "classes": [
+          14,
+          20,
+          21,
+          25
+        ],
+        "records": [
+          {
+            "display_name": "Mosslight",
+            "country_of_filing": "Japan",
+            "registration_number": "6060253",
+            "class": 21,
+            "reported_status": "Registered",
+            "status_date": "2018-07-06"
+          },
+          {
+            "display_name": "モスライト MOSSLIGHT",
+            "country_of_filing": "Japan",
+            "registration_number": "4793421",
+            "class": 14,
+            "reported_status": "Expired",
+            "status_date": "2024-08-06"
+          },
+          {
+            "display_name": "モスライト MOSSLIGHT",
+            "country_of_filing": "Japan",
+            "registration_number": "5061494",
+            "class": 20,
+            "reported_status": "Expired",
+            "status_date": "2017-07-06"
+          },
+          {
+            "display_name": "モスライト MOSSLIGHT",
+            "country_of_filing": "Japan",
+            "registration_number": "4793420",
+            "class": 25,
+            "reported_status": "Expired",
+            "status_date": "2024-08-06"
+          },
+          {
+            "display_name": "Mosslight-LED",
+            "country_of_filing": "Japan",
+            "registration_number": "6060254",
+            "class": 21,
+            "reported_status": "Registered",
+            "status_date": "2018-07-06"
+          }
+        ],
+        "limitations": "WIPO collection coverage differs from TMview; the China record did not appear here. WIPO recommends searching relevant national/regional registers too. Reported statuses were not checked separately in JPO. No class 9 or 41 records appeared in this query."
+      }
+    ],
+    "verified_name_uses": [
+      {
+        "name": "Mosslight",
+        "publisher_display": "Kappa Mesa Software Inc.",
+        "type": "Android game",
+        "url": "https://play.google.com/store/apps/details?id=com.kartiop.locak.baltodoar",
+        "verified_by": "Complete publisher listing retrieved through web search; independently fetched HTTP 200 and parsed body text",
+        "date_fact": "Listing states Updated on Oct 3, 2026; this is not evidence of first publication date",
+        "description": "Forest-themed turn-based adventure with a lantern and local saves. Exact game-title overlap."
+      },
+      {
+        "name": "Mosslight",
+        "publisher_display": "FluckyAnticsGames",
+        "type": "Released Windows/Linux game on itch.io",
+        "url": "https://fluckyanticsgames.itch.io/mosslight",
+        "verified_by": "Full publisher page opened with web tool",
+        "date_fact": "Published 30 September 2026 at 07:33 UTC; Status Released",
+        "description": "Commercial colony/terraforming simulation, listed at AUD 5 or more. Exact game-title overlap."
+      },
+      {
+        "name": "MossLight",
+        "publisher_display": "Flucky Antics Games",
+        "type": "Steam game storefront",
+        "url": "https://store.steampowered.com/app/5351650/?curator_clanid=4777282",
+        "verified_by": "Full storefront retrieved through web search; independently fetched HTTP 200 and parsed body text",
+        "date_fact": "Coming soon; do not treat storefront existence as completed Steam release",
+        "description": "Same colony game as the itch.io listing; title MossLight, franchise Mosslight. Case change does not provide practical name separation."
+      },
+      {
+        "name": "Moss Light",
+        "publisher_display": "zjikra",
+        "type": "Released downloadable game on itch.io",
+        "url": "https://zjikra.itch.io/moss-light",
+        "verified_by": "Full publisher page opened with web tool",
+        "date_fact": "The page says created for Ludum Dare 48 but gives no precise release date in the inspected text",
+        "description": "Tower-defence/roguelike with glowing plants. Close game-title overlap with a space."
+      },
+      {
+        "name": "Mosslight Games",
+        "publisher_display": "Mosslight Games",
+        "type": "UK indie game studio profile",
+        "url": "https://mosslightgames.itch.io/",
+        "verified_by": "Full studio profile opened with web tool",
+        "date_fact": "No founding date verified",
+        "description": "Profile identifies a UK studio developing Bestiary of Danzi. Relevant existing game-industry brand use."
+      },
+      {
+        "name": "Mosslight Meadow",
+        "publisher_display": "Lanternleaf Games",
+        "type": "Steam game storefront",
+        "url": "https://store.steampowered.com/app/5032300/Mosslight_Meadow/",
+        "verified_by": "Full storefront opened with web tool",
+        "date_fact": "Planned release Nov 5, 2026; not yet released in inspected listing",
+        "description": "Forest/meadow fantasy action-adventure. Similar dominant word in related goods."
+      },
+      {
+        "name": "MossLight - Botanical Resource",
+        "publisher_display": "Michaela Walcott",
+        "type": "Apple App Store lifestyle software",
+        "url": "https://apps.apple.com/us/app/mosslight-botanical-resource/id6774940375",
+        "verified_by": "Full App Store listing opened with web tool",
+        "date_fact": "Copyright 2026 Quiet Grove Botania; version history shows Sep 19 without separately proving the year of that history entry",
+        "description": "Plant-care software; additional software-market use, not a game-title match."
+      },
+      {
+        "name": "Mosslight Series: Base Tileset",
+        "publisher_display": "Givty",
+        "type": "Commercial game asset pack",
+        "url": "https://givty.itch.io/basetileset",
+        "verified_by": "Full creator asset page opened with web tool",
+        "date_fact": "No precise first release date verified",
+        "description": "Nature/forest game-art series. Additional related-market use; none of these external assets are being licensed for this project."
+      }
+    ],
+    "unverified_leads": [
+      {
+        "name": "MOSSLIGHT - An idle game about a healer who cannot attack.",
+        "url": "https://dhseadev.itch.io/mosslight",
+        "observed": "Search retrieval returned a detailed creator page claiming publication 20 September 2026 at 20:17 UTC. Direct web open failed and independent fetch returned HTTP 403. Do not describe as independently live-page-verified."
+      }
+    ],
+    "pending_or_inconclusive": [
+      {
+        "queries": [
+          "Mchowa Dolina",
+          "Moostal",
+          "Mooslicht",
+          "Moss Light"
+        ],
+        "service": "TMview",
+        "status": "A four-query browser batch was started before the quota interruption. Its tool session no longer exists and no outcomes were retained in this agent context. Results are not verified and must not be reported as zero."
+      },
+      {
+        "queries": [
+          "MchowaDolina"
+        ],
+        "service": "TMview",
+        "status": "Requested follow-up, not performed."
+      }
+    ],
+    "interpretation": "Mosslight is not a clear or unique game brand: exact and close game titles and game-industry brands already exist. The inspected registry queries do not establish a game/software registration conflict, but trademark registration is not the sole source of rights and internet use matters. Registered names in unrelated classes and jurisdictions are not automatically bans on this game. Recommend selecting a distinct title and screening the selected title before publication; owner decides. Do not rename automatically.",
+    "guidance_sources": [
+      {
+        "url": "https://www.uspto.gov/trademarks/search/comprehensive-clearance-search-similar-trademarks",
+        "supports": "Clearance considers similar marks on related goods/services and common-law use, not just exact federal registry hits."
+      },
+      {
+        "url": "https://www.uspto.gov/trademarks/search/federal-trademark-searching",
+        "supports": "Similarity can concern appearance, sound, meaning or commercial impression; restricting searches by class can overlook related goods."
+      },
+      {
+        "url": "https://www.wipo.int/en/web/global-brand-database",
+        "supports": "National and regional registers should also be searched because collection coverage is incomplete."
+      },
+      {
+        "url": "https://nclpub.wipo.int/enfr/pdf-download.pdf?classNumber=9&dateInForce=20260101&lang=en&tab=&viewMode=flat",
+        "supports": "Nice Classification 2026 class 9 contains downloadable and recorded computer game software."
+      },
+      {
+        "url": "https://nclpub.wipo.int/enfr/pdf-download.pdf?classNumber=41&dateInForce=20260101&lang=en&tab=&viewMode=flat",
+        "supports": "Nice Classification 2026 class 41 includes online gaming/game services."
+      }
+    ],
+    "artifacts": "No screenshots created or overwritten; no public project file modified by this agent.",
+    "final_positive_control_and_rerun": [
+      {
+        "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Nintendo",
+        "normal_animation_timing": true,
+        "title": "EUIPO - eSearch",
+        "fields": [
+          {
+            "id": "basicSearchBigInput",
+            "value": "Nintendo"
+          },
+          {
+            "id": "basicSearchSmallInput",
+            "value": "Nintendo"
+          }
+        ],
+        "status_filters": [],
+        "selected_class_filters": [],
+        "service": "EUIPO",
+        "query": "Nintendo",
+        "checked_at_utc": "2026-10-10T12:12:18.440947+00:00",
+        "captured_dom_text_sha256": "4b93c377ffad3e68ded240bcdd53e8566b9a2cffe1fdd1ce5689ed4efa80640e",
+        "retained_as": "Query fields, counts, timestamp and digest; full webpage prose omitted.",
+        "observed_counts": {
+          "trademarks": 129
+        }
+      },
+      {
+        "url": "https://euipo.europa.eu/eSearch/#basic/1+1+1+1/100+100+100+100/Mosslight",
+        "normal_animation_timing": true,
+        "title": "EUIPO - eSearch",
+        "fields": [
+          {
+            "id": "basicSearchBigInput",
+            "value": "Mosslight"
+          },
+          {
+            "id": "basicSearchSmallInput",
+            "value": "Mosslight"
+          }
+        ],
+        "status_filters": [],
+        "selected_class_filters": [],
+        "service": "EUIPO",
+        "query": "Mosslight",
+        "checked_at_utc": "2026-10-10T12:12:25.585596+00:00",
+        "captured_dom_text_sha256": "3d213221ccf0b0012ba1cc247b7f30c7205ec864d0b4d5e4b1eb6468228ed48c",
+        "retained_as": "Query fields, counts, timestamp and digest; full webpage prose omitted.",
+        "observed_counts": {
+          "trademarks": 0
+        }
+      },
+      {
+        "url": "https://tmsearch.uspto.gov/search/search-results",
+        "normal_animation_timing": true,
+        "title": "Trademark search",
+        "fields": [
+          {
+            "id": "searchbar",
+            "value": "Nintendo"
+          }
+        ],
+        "status_filters": [
+          {
+            "id": "statusLive",
+            "checked": true
+          },
+          {
+            "id": "statusDead",
+            "checked": true
+          }
+        ],
+        "selected_class_filters": [],
+        "service": "USPTO",
+        "query": "Nintendo",
+        "checked_at_utc": "2026-10-10T12:12:34.278009+00:00",
+        "captured_dom_text_sha256": "c2511355150d40eec621161184ebfa37700b0f8812c7ec1a8e90fe1b24281609",
+        "retained_as": "Query fields, counts, timestamp and digest; full webpage prose omitted.",
+        "observed_counts": {
+          "live": 67,
+          "dead": 136,
+          "total": 203
+        }
+      },
+      {
+        "url": "https://tmsearch.uspto.gov/search/search-results",
+        "normal_animation_timing": true,
+        "title": "Trademark search",
+        "fields": [
+          {
+            "id": "searchbar",
+            "value": "Mosslight"
+          }
+        ],
+        "status_filters": [
+          {
+            "id": "statusLive",
+            "checked": true
+          },
+          {
+            "id": "statusDead",
+            "checked": true
+          }
+        ],
+        "selected_class_filters": [],
+        "service": "USPTO",
+        "query": "Mosslight",
+        "checked_at_utc": "2026-10-10T12:12:41.315993+00:00",
+        "captured_dom_text_sha256": "a920481a9a858cd467fbee26fcec4640ec04d8f2ea32bb3a4b1044bd490d1a86",
+        "retained_as": "Query fields, counts, timestamp and digest; full webpage prose omitted.",
+        "observed_counts": {
+          "live": 0,
+          "dead": 0,
+          "total": 0
+        }
+      }
+    ],
+    "final_control_attempt_note": "Completed successfully within the bounded check. The animation-clock injection was removed before navigation; normal browser timing was confirmed for all four searches. Earlier zero results were independently confirmed after positive controls.",
+    "resolved_followups": [
+      {
+        "queries": [
+          "Nintendo positive control",
+          "Mosslight rerun after positive control"
+        ],
+        "services": [
+          "EUIPO",
+          "USPTO"
+        ],
+        "status": "Previously pending after the interruption; now COMPLETED in the final bounded quality check. Nintendo controls returned EUIPO129 trade marks and USPTO203 results (67live/136dead). Subsequent Mosslight queries returned zero in both, with normal animation timing and correct query echoes. See final_positive_control_and_rerun."
+      }
+    ]
+  },
+  "polish_and_german_names": {
+    "date": "2026-10-10",
+    "recorded_at_utc": "2026-10-10T11:57:30.556232+00:00",
+    "attribution": "Codex read-only name search; not a legal clearance opinion",
+    "current_local_names": {
+      "en_title": "Mosslight",
+      "pl_title": "Mchowa Dolina",
+      "de_title": "Mosslight",
+      "de_page_title": "Mosslight · Ein Märchenabenteuer",
+      "de_in_world_place": "Moostal",
+      "unused_translation_checked": "Mooslicht"
+    },
+    "dpma": {
+      "search_url": "https://register.dpma.de/DPMAregister/marke/basis",
+      "method": "Normal public HTML search-form POST using a fresh cookie session, without account login",
+      "scope": {
+        "national_DE": true,
+        "EU_EM": true,
+        "international_IR": true,
+        "classes_restricted": false,
+        "live_marks_only": false
+      },
+      "no_hit_notice": "Die Datenbankabfrage lieferte keine Treffer.",
+      "queries": [
+        {
+          "input": "Mosslight",
+          "server_query_expression": "(marke=\"Mosslight\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Moss Light",
+          "server_query_expression": "(marke=\"Moss\" and marke=\"Light\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Mchowa Dolina",
+          "server_query_expression": "(marke=\"Mchowa\" and marke=\"Dolina\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "MchowaDolina",
+          "server_query_expression": "(marke=\"MchowaDolina\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Moostal",
+          "server_query_expression": "(marke=\"Moostal\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Mosslight*",
+          "server_query_expression": "(marke=\"Mosslight*\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "*Moss*Light*",
+          "server_query_expression": "(marke=\"*Moss*Light*\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Mooslicht",
+          "server_query_expression": "(marke=\"Mooslicht\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        },
+        {
+          "input": "Moostal*",
+          "server_query_expression": "(marke=\"Moostal*\")",
+          "result": "explicit_no_hits",
+          "final_url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg"
+        }
+      ],
+      "uninterpretable_attempts": [
+        "*Mosslight*",
+        "Mchowa*",
+        "Moss-Light",
+        "Nintendo (first HTTP form attempt)"
+      ],
+      "limitation": "Some attempts returned the plain search form or timed out. Only explicit no-hit responses are counted. DPMA states that its EU and international data are not guaranteed complete/current and it does not perform a similarity search. This is not clearance of unregistered rights or worldwide rights.",
+      "official_guidance": "https://www.dpma.de/marken/markenrecherche/index.html?param1=hubl",
+      "positive_control": {
+        "input": "Nintendo",
+        "server_query_expression": "(marke=\"Nintendo\")",
+        "method": "Native fresh Chrome public-form input and mouse click after scrolling into view",
+        "result_count": 121,
+        "url": "https://register.dpma.de/DPMAregister/marke/trefferliste#Filterkonfiguration",
+        "notice": "Trefferliste: 121 Treffer",
+        "scope": "DE/EM/IR default checked; no classes or live filter restriction"
+      },
+      "native_browser_confirmation": [
+        {
+          "input": "Mosslight",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "Moss Light",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "Mchowa Dolina",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "MchowaDolina",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "Moostal",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "Mosslight*",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        },
+        {
+          "input": "Moostal*",
+          "scope": [
+            true,
+            true,
+            true
+          ],
+          "url": "https://register.dpma.de/DPMAregister/marke/basis?si=#infomsg",
+          "explicit_no_hits": true,
+          "query_verified_as_submitted": true
+        }
+      ]
+    },
+    "polish_registry": {
+      "url": "https://ewyszukiwarka.pue.uprp.gov.pl/search/simple-search?lng=pl",
+      "result": "unavailable",
+      "attempts": "Web reader returned a login link only. Normal direct HTTPS and fresh headless Chrome returned an Incapsula script and no search form; Chrome remained blank on four reads over 12 seconds. No Polish trademark result was obtained.",
+      "api_guide_url": "https://api.uprp.gov.pl/assets/instrukcje/PROD/e-Search.pdf",
+      "api_access_note": "Official external API requires an e-Profile account with P2 permissions and token; no account created."
+    },
+    "german_title_notice_archive": {
+      "publisher": "Titelschutz-Journal",
+      "url": "https://www.titelschutzjournal.de/titel-archiv/",
+      "method": "Normal public GET form queries, no country/year/issue restriction",
+      "no_hit_notice": "Keine Treffer.",
+      "queries": [
+        {
+          "input": "Mosslight",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=Mosslight"
+        },
+        {
+          "input": "Moss Light",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=Moss+Light"
+        },
+        {
+          "input": "Mchowa Dolina",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=Mchowa+Dolina"
+        },
+        {
+          "input": "MchowaDolina",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=MchowaDolina"
+        },
+        {
+          "input": "Moostal",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=Moostal"
+        },
+        {
+          "input": "Mooslicht",
+          "result": "explicit_no_hits",
+          "url": "https://www.titelschutzjournal.de/titel-archiv/?tsj_do=1&tsj_q=Mooslicht"
+        }
+      ],
+      "limitation": "Archive covers only its own published notices from 2002 and expressly warns that no result does not mean a title is free. Other publishers and unregistered titles remain outside this search."
+    },
+    "verified_name_uses": [
+      {
+        "name": "MchowaDolina",
+        "url": "https://allegro.pl/oferta/drzewko-obraz-mech-chrobotek-personalizowane-50x28-cm-14609255452",
+        "source": "Seller product listing on marketplace",
+        "verification": "Full page opened with web reader; seller and manufacturer identifier both MchowaDolina. Moss decorative pictures/home décor; no game claim.",
+        "legal_inference": "An unrelated commercial use, not proof of a registered mark and not an automatic bar to a game title."
+      },
+      {
+        "name": "MoosTal",
+        "url": "https://www.moostal.shop/UEber-uns/",
+        "source": "Business own about page",
+        "verification": "Own page identifies MoosTal as Markus Soutschek Kachelofenbau, Pfarrkirchen, and connects moostal.de/moostal.shop. Stove construction/parts/shop.",
+        "legal_inference": "Unrelated business use, not proof of a registered mark and not an automatic bar to the narrative place name."
+      },
+      {
+        "name": "Moostal",
+        "url": "https://www.modhoster.de/mods/moostal",
+        "source": "Creator published mod page",
+        "verification": "Actual HTTPS page read. HTML title LS 17: Moostal v 1.0 Maps Mod; JSON-LD name Moostal, author Thomy_Toast, game Landwirtschafts Simulator, datePublished 2018-02-28T22:15:26+01:00.",
+        "legal_inference": "Prior game-related name use. Current German game title is Mosslight and Moostal occurs only as fictional valley; exact overlap is documented, not adjudicated."
+      }
+    ],
+    "relevant_official_law_urls": [
+      "https://www.gesetze-im-internet.de/markeng/__5.html",
+      "https://www.gesetze-im-internet.de/markeng/__15.html"
+    ],
+    "no_project_changes": true,
+    "no_screenshots": true,
+    "indexed_web_queries": [
+      "\"Mchowa Dolina\"",
+      "\"MchowaDolina\"",
+      "\"Mchowa Dolina\" gra",
+      "\"Mchowa Dolina\" sklep",
+      "\"Mchowa Dolina\" trademark",
+      "\"Mchowa Dolina\" site:store.steampowered.com",
+      "\"Mchowa Dolina\" site:itch.io",
+      "\"Moostal\" Spiel",
+      "\"Moostal\" Marke",
+      "\"Moostal\" site:modhoster.de/mods/",
+      "site:titelschutzanzeiger.de \"Mosslight\"",
+      "site:titelschutzanzeiger.de \"Moostal\"",
+      "site:titelschutzanzeiger.de \"Mchowa\""
+    ],
+    "indexed_search_limitation": "Indexed searches surfaced the retained name uses; no exact existing game title Mchowa Dolina was identified. Search engine results are not full marketplace or registry coverage. No comprehensive archive search of Der Titelschutz Anzeiger was completed (indexed queries only)."
+  },
+  "assets_and_credits": {
+    "checked_date": "2026-10-10",
+    "checked_by": "Codex",
+    "scope": "Read-only current game code/art/music inventory and official source/CC licence audit; owner final publication decision pending.",
+    "inventory": {
+      "runtime_javascript_files": [
+        "autosave.js",
+        "effects.js",
+        "engine.js",
+        "game.js",
+        "i18n.js",
+        "levels.js",
+        "music.js",
+        "renderer.js"
+      ],
+      "standalone_music_files": [
+        "call-to-adventure.mp3",
+        "enchanted-journey.mp3",
+        "evening-fall-harp.mp3",
+        "fairytale-waltz.mp3",
+        "folk-round.mp3"
+      ],
+      "retained_screenshots": [
+        "mosslight-desktop.png",
+        "mosslight-dusk.png",
+        "mosslight-mobile.png",
+        "mosslight-sky.png"
+      ],
+      "standalone_images_outside_screenshots": [],
+      "bundled_fonts": [],
+      "package_manifests_or_dependencies": [],
+      "art_mechanism": "Canvas 2D shapes/paths/gradients with generated offscreen canvas caches; original procedural SVG turbulence background inline in CSS",
+      "effects_mechanism": "Web Audio oscillators and deterministic generated noise; no samples",
+      "fonts_mechanism": "locally installed Georgia/Trebuchet MS/Arial/generic fallback; no font file distributed",
+      "external_runtime_dependencies_found": false,
+      "embedded_mp3_attached_art": [
+        "enchanted-journey.mp3",
+        "folk-round.mp3",
+        "evening-fall-harp.mp3",
+        "fairytale-waltz.mp3"
+      ],
+      "screenshots_reviewed": "All four existing retained files viewed; no capture or write. Distinct dwarf wizard/forest/phoenix/cloud imagery; no obvious Nintendo character, logo or copied UI identified. This visual review is not exhaustive proof of non-infringement."
+    },
+    "music": [
+      {
+        "file": "call-to-adventure.mp3",
+        "title": "Call to Adventure",
+        "isrc": "USUAN1300022",
+        "author": "Kevin MacLeod",
+        "license": "CC BY 4.0",
+        "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022",
+        "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Call%20to%20Adventure.mp3",
+        "bytes": 9894055,
+        "sha256": "0e641ec59779e5bf0236eaa2a952f6f050633d6cce49a7bb5ab6802dec970772",
+        "local_matches_provenance": true,
+        "fresh_official_download_matches_local": true,
+        "metadata_notices": {
+          "title": "Call to Adventure",
+          "artist": "Kevin MacLeod",
+          "TCM": "Kevin MacLeod",
+          "date": "2013-03-20 20:42"
+        }
+      },
+      {
+        "file": "enchanted-journey.mp3",
+        "title": "Enchanted Journey",
+        "isrc": "USUAN1100799",
+        "author": "Kevin MacLeod",
+        "license": "CC BY 4.0",
+        "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799",
+        "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Enchanted%20Journey.mp3",
+        "bytes": 10784428,
+        "sha256": "9ada17171c3f3b4034ca390e3bd01bd9af0bb8625659a8e5f1fbbb8756c7f750",
+        "local_matches_provenance": true,
+        "fresh_official_download_matches_local": true,
+        "metadata_notices": {
+          "title": "Enchanted Journey",
+          "artist": "Kevin MacLeod",
+          "TCM": "Kevin MacLeod",
+          "date": "2011"
+        }
+      },
+      {
+        "file": "folk-round.mp3",
+        "title": "Folk Round",
+        "isrc": "USUAN1100357",
+        "author": "Kevin MacLeod",
+        "license": "CC BY 4.0",
+        "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357",
+        "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Folk%20Round.mp3",
+        "bytes": 7472358,
+        "sha256": "b4e6aa7d67bb05a269b6f916662355358b6e849d29b81f5185f211a31fdb8051",
+        "local_matches_provenance": true,
+        "fresh_official_download_matches_local": true,
+        "metadata_notices": {
+          "title": "Folk Round",
+          "artist": "Kevin MacLeod",
+          "TCM": "Kevin MacLeod",
+          "date": "2007"
+        }
+      },
+      {
+        "file": "evening-fall-harp.mp3",
+        "title": "Evening Fall (Harp)",
+        "isrc": "USUAN1100236",
+        "author": "Kevin MacLeod",
+        "license": "CC BY 4.0",
+        "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236",
+        "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Evening%20Fall%20-%20Harp.mp3",
+        "bytes": 4759305,
+        "sha256": "7899334b322d0b651801c3f2f0c70adb4704871863ca6fa2de1f0d84f593ee65",
+        "local_matches_provenance": true,
+        "fresh_official_download_matches_local": true,
+        "metadata_notices": {
+          "title": "Evening Fall - Harp",
+          "artist": "Kevin MacLeod",
+          "composer": "Kevin MacLeod",
+          "copyright": "2005",
+          "comment": "incompetech.com",
+          "date": "2005"
+        }
+      },
+      {
+        "file": "fairytale-waltz.mp3",
+        "title": "Fairytale Waltz",
+        "isrc": "USUAN1100232",
+        "author": "Kevin MacLeod",
+        "license": "CC BY 4.0",
+        "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232",
+        "download": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fairytale%20Waltz.mp3",
+        "bytes": 3279372,
+        "sha256": "d92096ef844e9e25d1d3d796f2f4c6b21d2e684af15c9d959699b17d3c96e834",
+        "local_matches_provenance": true,
+        "fresh_official_download_matches_local": true,
+        "metadata_notices": {
+          "title": "FairyTale Waltz",
+          "artist": "Kevin MacLeod",
+          "composer": "Kevin MacLeod",
+          "copyright": "2005",
+          "comment": "incompetech.com",
+          "date": "2005"
+        }
+      }
+    ],
+    "official_source_responses": [
+      {
+        "url": "https://incompetech.com/music/royalty-free/pieces.json",
+        "final_url": "https://incompetech.com/music/royalty-free/pieces.json",
+        "bytes": 881512,
+        "sha256": "54802ad340562624b9d1c9c97aa9f005e2b9bf79001f8a1a07ed857e68b2164a",
+        "status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232",
+        "final_url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232",
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "status": 200,
+        "content_type": "text/html"
+      },
+      {
+        "url": "https://incompetech.com/music/royalty-free/licenses/",
+        "final_url": "https://incompetech.com/music/royalty-free/licenses/",
+        "bytes": 12146,
+        "sha256": "479019ed42fd8384c63c04bd95dc6d0e0e0da505ddd6f567a13018c724f8416d",
+        "status": 200,
+        "content_type": "text/html"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+        "final_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+        "bytes": 18657,
+        "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+        "status": 200,
+        "content_type": "text/plain; charset=utf-8"
+      }
+    ],
+    "official_track_pages": [
+      {
+        "title": "Call to Adventure",
+        "isrc": "USUAN1300022",
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022",
+        "status": 200,
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "cc_by_4_template_present": true
+      },
+      {
+        "title": "Enchanted Journey",
+        "isrc": "USUAN1100799",
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799",
+        "status": 200,
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "cc_by_4_template_present": true
+      },
+      {
+        "title": "Folk Round",
+        "isrc": "USUAN1100357",
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357",
+        "status": 200,
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "cc_by_4_template_present": true
+      },
+      {
+        "title": "Evening Fall (Harp)",
+        "isrc": "USUAN1100236",
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236",
+        "status": 200,
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "cc_by_4_template_present": true
+      },
+      {
+        "title": "Fairytale Waltz",
+        "isrc": "USUAN1100232",
+        "url": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232",
+        "status": 200,
+        "bytes": 26826,
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94",
+        "cc_by_4_template_present": true
+      }
+    ],
+    "offline_legal_text": {
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "matches_provenance": true
+    },
+    "translated_credits": {
+      "assertions": 48,
+      "locales": {
+        "en": {
+          "language": "en",
+          "heading": "Music and licenses",
+          "open": true,
+          "tracks": [
+            {
+              "title": "Fairytale Waltz",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232"
+            },
+            {
+              "title": "Folk Round",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357"
+            },
+            {
+              "title": "Evening Fall (Harp)",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236"
+            },
+            {
+              "title": "Enchanted Journey",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799"
+            },
+            {
+              "title": "Call to Adventure",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022"
+            }
+          ],
+          "checks": 16
+        },
+        "de": {
+          "language": "de",
+          "heading": "Musik und Lizenzen",
+          "open": true,
+          "tracks": [
+            {
+              "title": "Fairytale Waltz",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232"
+            },
+            {
+              "title": "Folk Round",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357"
+            },
+            {
+              "title": "Evening Fall (Harp)",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236"
+            },
+            {
+              "title": "Enchanted Journey",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799"
+            },
+            {
+              "title": "Call to Adventure",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022"
+            }
+          ],
+          "checks": 16
+        },
+        "pl": {
+          "language": "pl",
+          "heading": "Muzyka i licencje",
+          "open": true,
+          "tracks": [
+            {
+              "title": "Fairytale Waltz",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232"
+            },
+            {
+              "title": "Folk Round",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100357"
+            },
+            {
+              "title": "Evening Fall (Harp)",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100236"
+            },
+            {
+              "title": "Enchanted Journey",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799"
+            },
+            {
+              "title": "Call to Adventure",
+              "source": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300022"
+            }
+          ],
+          "checks": 16
+        }
+      },
+      "browser": "Chrome, native DevTools input, local file://, 1440x1200, no screenshot capture"
+    },
+    "sources": {
+      "music_author_faq": "https://incompetech.com/music/royalty-free/faq.html",
+      "music_author_licensing": "https://incompetech.com/music/royalty-free/licenses/",
+      "cc_legal_code": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+      "cc_german_legal_code": "https://creativecommons.org/licenses/by/4.0/legalcode.de",
+      "cc_polish_legal_code": "https://creativecommons.org/licenses/by/4.0/legalcode.pl",
+      "cc_faq": "https://creativecommons.org/faq/",
+      "mit_license": "https://opensource.org/license/mit"
+    },
+    "limits": [
+      "Source inspection and hashes cannot prove exclusive originality of every AI-assisted code or visual element.",
+      "Music is copyrighted; current author offer and credited CC BY 4.0 grant support this distribution subject to conditions.",
+      "No third-party copied code or standalone game graphics identified; this is an inventory and provenance review, not similarity comparison against every work.",
+      "Unchanged source MP3 packages contain author-supplied embedded artwork; the game does not extract or display it."
+    ],
+    "official_catalog_matching": {
+      "catalog_records": 1443,
+      "matched_records": [
+        {
+          "title": "Call to Adventure",
+          "isrc": "USUAN1300022",
+          "filename": "Call to Adventure.mp3",
+          "length": "00:04:07",
+          "matches_local_provenance": true
+        },
+        {
+          "title": "Enchanted Journey",
+          "isrc": "USUAN1100799",
+          "filename": "Enchanted Journey.mp3",
+          "length": "00:04:30",
+          "matches_local_provenance": true
+        },
+        {
+          "title": "Folk Round",
+          "isrc": "USUAN1100357",
+          "filename": "Folk Round.mp3",
+          "length": "00:03:04",
+          "matches_local_provenance": true
+        },
+        {
+          "title": "Evening Fall (Harp)",
+          "isrc": "USUAN1100236",
+          "filename": "Evening Fall - Harp.mp3",
+          "length": "00:02:25",
+          "matches_local_provenance": true
+        },
+        {
+          "title": "Fairytale Waltz",
+          "isrc": "USUAN1100232",
+          "filename": "Fairytale Waltz.mp3",
+          "length": "00:01:39",
+          "matches_local_provenance": true
+        }
+      ],
+      "all_five_exact_matches": true
+    }
+  },
+  "report": "NAME_AND_LICENSE_REVIEW.md"
+}

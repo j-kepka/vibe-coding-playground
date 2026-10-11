@@ -18,7 +18,7 @@ Small projects I build in short iterations with Codex, an AI coding agent.
 | Project `docs/` | Hold additional process records, screenshots and verification instructions where useful. |
 
 Each project keeps its filled outcome case at the top level. Additional records
-and screenshots belong in `docs/`. Prismellow opens from its own `index.html`.
+and screenshots belong in `docs/`. Both games open from their own `index.html`.
 
 ## 01 — Prismellow
 
@@ -35,3 +35,24 @@ Copy `01-prismellow/` and open `index.html`; no server or installation is needed
 
 This completed game was imported after its original development session.
 Intermediate code versions were not committed separately.
+
+## 02 — Wandmoss Journey
+
+Wandmoss Journey is a fairy-tale platformer I built with Codex, starting with
+one forest level and expanding through my tests and feedback. Guide a dwarf
+wizard through four chapters, activate rocket boots in the clouds, and face
+a ten-hit boss. The game includes local autosave, keyboard and touch controls,
+English/German/Polish, and music by Kevin MacLeod.
+Copy `02-wandmoss-journey/` and open `index.html`; no server or installation is needed.
+
+![Wandmoss Journey in the dusk forest with English controls](02-wandmoss-journey/docs/screenshots/wandmoss-journey-dusk.png)
+
+[Play](https://j-kepka.github.io/vibe-coding-playground/02-wandmoss-journey/) · [Instructions](02-wandmoss-journey/README.md) ·
+[Development process](02-wandmoss-journey/docs/DEVELOPMENT_PROCESS.md) ·
+[AI Transformation Outcomes](02-wandmoss-journey/AI_TRANSFORMATION_OUTCOMES.md)
+
+The first playable release is published and gameplay development is complete.
+Local log-edge and phone-view corrections await the second publication PR
+and physical-phone verification.
+Original code and artwork use MIT; the recordings use CC BY 4.0, with
+[separate notices](02-wandmoss-journey/THIRD_PARTY_NOTICES.md).
