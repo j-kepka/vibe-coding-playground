@@ -23,6 +23,64 @@
   const gameView = $('game-view');
   const fullscreenButton = $('fullscreen');
   let fullscreenPending = false, wasFullscreen = false, pagePosition = null;
+  const mobileMedia = matchMedia('(max-width: 600px), (pointer: coarse) and (max-width: 1100px)');
+  let mobileFrame = null, mobileOrientation = null, mobileMode = state.mode;
+  let mobileScrollPending = false;
+  const mobileTouches = new Map();
+  let mobileZoom = 1, pinchDistance = 0, pinchZoom = 1;
+
+  function mobileTouchDistance() {
+    const [first, second] = [...mobileTouches.values()];
+    return Math.hypot(first.x - second.x, first.y - second.y);
+  }
+
+  function positionMobileCanvas() {
+    if (!mobileFrame) return;
+    const { width, height, scale } = mobileFrame;
+    const playerX = state.player.x + state.player.w / 2 - state.camera;
+    const playerY = state.player.y + state.player.h / 2;
+    const offsetX = Math.max(0, Math.min(MossEngine.WIDTH * scale - width,
+      playerX * scale - width * .4));
+    const offsetY = Math.max(0, Math.min(MossEngine.HEIGHT * scale - height,
+      playerY * scale - height * .62));
+    canvas.style.left = `${-offsetX}px`;
+    canvas.style.top = `${-offsetY}px`;
+  }
+  function updateMobileLayout() {
+    const active = mobileMedia.matches;
+    const orientation = screen.orientation?.type?.startsWith('landscape') ?? (innerWidth > innerHeight);
+    if (mobileOrientation !== null && mobileOrientation !== orientation) {
+      clearInput();
+      mobileZoom = 1;
+      if (state.mode !== 'ready') mobileScrollPending = true;
+    }
+    mobileOrientation = orientation;
+    gameView.classList.toggle('is-mobile-page', active);
+    if (active) {
+      gameView.style.setProperty('--mobile-height', `${window.visualViewport?.height || innerHeight}px`);
+      const stage = $('stage');
+      const width = stage.clientWidth, height = stage.clientHeight;
+      if (width && height) {
+        // Crop the drawn scene around the wizard; simulation and saves stay in
+        // their original coordinates. Never shrink a phone wizard below 30px.
+        const scale = Math.max(width / MossEngine.WIDTH, height / MossEngine.HEIGHT, .6) * mobileZoom;
+        mobileFrame = { width, height, scale };
+        canvas.style.width = `${MossEngine.WIDTH * scale}px`;
+        canvas.style.height = `${MossEngine.HEIGHT * scale}px`;
+        positionMobileCanvas();
+      }
+      if (mobileScrollPending && !isGameFullscreen()) {
+        gameView.scrollIntoView({ block: 'start', behavior: 'instant' });
+      }
+    } else {
+      mobileFrame = null;
+      mobileZoom = 1;
+      mobileTouches.clear(); pinchDistance = 0;
+      gameView.style.removeProperty('--mobile-height');
+      for (const property of ['width', 'height', 'left', 'top']) canvas.style.removeProperty(property);
+    }
+    mobileScrollPending = false;
+  }
 
   function isGameFullscreen() {
     return (document.fullscreenElement || document.webkitFullscreenElement) === gameView;
@@ -47,10 +105,14 @@
       else if (!$('music-dialog').open) fullscreenButton.focus({ preventScroll: true });
       if (!active && pagePosition) {
         window.scrollTo(pagePosition.x, pagePosition.y);
+        if (mobileMedia.matches && state.mode !== 'ready' && pagePosition.orientation !== mobileOrientation) {
+          mobileScrollPending = true;
+        }
         pagePosition = null;
       }
     }
     wasFullscreen = active;
+    updateMobileLayout();
   }
   async function toggleFullscreen() {
     if (fullscreenPending) return;
@@ -58,7 +120,7 @@
     const method = active ? (document.exitFullscreen || document.webkitExitFullscreen) :
       (gameView.requestFullscreen || gameView.webkitRequestFullscreen);
     if (!method) return;
-    if (!active) pagePosition = { x: window.scrollX, y: window.scrollY };
+    if (!active) pagePosition = { x: window.scrollX, y: window.scrollY, orientation: mobileOrientation };
     clearInput();
     fullscreenPending = true;
     updateFullscreen();
@@ -79,6 +141,7 @@
 
   function clearInput() {
     keyboard.clear(); touchPointers.clear(); jumpPressed = castPressed = bootsPressed = false;
+    mobileTouches.clear(); pinchDistance = 0;
     document.querySelectorAll('[data-control]').forEach(button => button.classList.remove('pressed'));
   }
   function held(action) {
@@ -262,6 +325,12 @@
     effects.sync(state, document.hidden || $('music-dialog').open);
     if (window.MossRenderer) MossRenderer.render(ctx, state, renderTime);
     updateHUD();
+    if (mobileMedia.matches && state.mode === 'playing' && mobileMode !== 'playing') {
+      mobileScrollPending = true;
+      updateMobileLayout();
+    }
+    mobileMode = state.mode;
+    positionMobileCanvas();
   }
   function start() {
     if (state.mode !== 'ready') return;
@@ -428,6 +497,30 @@
     if (activeToast) $('toast').textContent = t(activeToast.key, activeToast.variables);
     render();
   });
+  window.addEventListener('resize', updateMobileLayout);
+  window.visualViewport?.addEventListener('resize', updateMobileLayout);
+  screen.orientation?.addEventListener('change', updateMobileLayout);
+  mobileMedia.addEventListener('change', updateMobileLayout);
+  if (window.ResizeObserver) new ResizeObserver(updateMobileLayout).observe($('stage'));
+  canvas.addEventListener('pointerdown', event => {
+    if (!mobileFrame || event.pointerType !== 'touch') return;
+    event.preventDefault();
+    canvas.setPointerCapture(event.pointerId);
+    mobileTouches.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (mobileTouches.size === 2) {
+      pinchDistance = mobileTouchDistance(); pinchZoom = mobileZoom;
+    }
+  });
+  canvas.addEventListener('pointermove', event => {
+    if (!mobileTouches.has(event.pointerId)) return;
+    mobileTouches.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (mobileTouches.size === 2 && pinchDistance > 0) {
+      mobileZoom = Math.max(1, Math.min(2, pinchZoom * mobileTouchDistance() / pinchDistance));
+      updateMobileLayout();
+    }
+  });
+  const releaseMobileTouch = event => { mobileTouches.delete(event.pointerId); pinchDistance = 0; };
+  for (const event of ['pointerup', 'pointercancel', 'lostpointercapture']) canvas.addEventListener(event, releaseMobileTouch);
   window.Wandmoss = {
     get state() { return state; }, music, effects, start, restart, pause, retry, resume,
     advance(dt, input = {}) { MossEngine.step(state, dt, input); renderTime += dt; events(); render(); },

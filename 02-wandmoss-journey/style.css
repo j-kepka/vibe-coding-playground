@@ -261,4 +261,62 @@ body[data-theme='sky'] .stage-caption { color: #345364; text-shadow: none; }
   .game-view.is-fullscreen .transition-card h2 { font-size: 20px; margin-bottom: 7px; }
   .game-view.is-fullscreen .transition-card p { font-size: 9px; }
 }
+/* Phone play uses a readable, following window into the original scene. */
+.game-view.is-mobile-page { display: flex; flex-direction: column; }
+.game-view.is-mobile-page:not(.is-fullscreen) { height: var(--mobile-height, 100dvh); scroll-margin-top: 0; }
+.game-view.is-mobile-page .game-shell { display: flex; flex-direction: column; flex: 1 1 0; min-height: 0; width: 100%; }
+.game-view.is-mobile-page .toolbar,
+.game-view.is-mobile-page .resource-bar,
+.game-view.is-mobile-page .save-bar,
+.game-view.is-mobile-page .sound-bar,
+.game-view.is-mobile-page .game-footer { flex-shrink: 0; }
+.game-view.is-mobile-page .stage { flex: 1 1 0; height: auto; min-height: 0; aspect-ratio: auto; }
+.game-view.is-mobile-page canvas { position: absolute; max-width: none; object-fit: fill; }
+.game-view.is-mobile-page .touch-controls { display: flex; flex-shrink: 0; margin: 0; padding: 8px 10px; gap: 8px; }
+.game-view.is-mobile-page .touch-controls > div { gap: 6px; }
+.game-view.is-mobile-page .touch-controls button { width: clamp(44px, 13vw, 58px); height: 52px; }
+.game-view.is-mobile-page .toolbar { min-height: 48px; padding: 6px 10px; gap: 8px; }
+.game-view.is-mobile-page .toolbar-eyebrow { font-size: 6px; }
+.game-view.is-mobile-page .level-label { min-width: 0; gap: 7px; }
+.game-view.is-mobile-page .level-label > div { min-width: 0; }
+.game-view.is-mobile-page .level-label strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; }
+.game-view.is-mobile-page .level-number { flex-shrink: 0; font-size: 18px; padding-right: 7px; }
+.game-view.is-mobile-page .stats { flex-shrink: 0; gap: 6px; }
+.game-view.is-mobile-page .toolbar-actions { flex-shrink: 0; gap: 3px; }
+.game-view.is-mobile-page .resource-bar { min-height: 34px; padding: 5px 10px; flex-wrap: nowrap; gap: 8px; }
+.game-view.is-mobile-page .score-stat { min-width: 0; }
+.game-view.is-mobile-page .spell-status { min-width: 0; flex: 1; justify-content: center; gap: 5px; }
+.game-view.is-mobile-page #spell-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.game-view.is-mobile-page .spell-track { width: 22px; flex-shrink: 0; }
+.game-view.is-mobile-page .spell-status kbd,
+.game-view.is-mobile-page .boots-status kbd { display: none; }
+.game-view.is-mobile-page .boots-status { width: auto; min-width: 0; max-width: 40%; font-size: 8px; gap: 5px; }
+.game-view.is-mobile-page #boots-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.game-view.is-mobile-page .stage-caption { top: 9px; left: 12px; max-width: calc(100% - 24px); font-size: 6px; letter-spacing: 1px; }
+.game-view.is-mobile-page .overlay { padding: 8px; overflow: hidden; }
+.game-view.is-mobile-page .overlay-card { max-width: 100%; max-height: 100%; overflow-y: auto; overscroll-behavior: contain; }
+.game-view.is-mobile-page .transition-card { top: 50%; transform: translate(-50%, -50%); max-height: calc(100% - 16px); overflow-y: auto; overscroll-behavior: contain; pointer-events: auto; }
+body[data-mode='playing'] .game-view.is-mobile-page .save-bar,
+body[data-mode='playing'] .game-view.is-mobile-page .sound-bar,
+body[data-mode='playing'] .game-view.is-mobile-page .game-footer,
+body[data-mode='transition'] .game-view.is-mobile-page .save-bar,
+body[data-mode='transition'] .game-view.is-mobile-page .sound-bar,
+body[data-mode='transition'] .game-view.is-mobile-page .game-footer,
+body[data-mode='bossDefeat'] .game-view.is-mobile-page .save-bar,
+body[data-mode='bossDefeat'] .game-view.is-mobile-page .sound-bar,
+body[data-mode='bossDefeat'] .game-view.is-mobile-page .game-footer { display: none; }
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .game-view.is-mobile-page .toolbar { min-height: 44px; }
+  .game-view.is-mobile-page .resource-bar { min-height: 28px; padding-top: 4px; padding-bottom: 4px; flex-wrap: nowrap; gap: 10px; }
+  .game-view.is-mobile-page .score-stat { min-width: 0; }
+  .game-view.is-mobile-page .boots-status { width: auto; min-width: 0; max-width: 45%; font-size: 8px; }
+  .game-view.is-mobile-page #boots-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .game-view.is-mobile-page .save-bar { min-height: 24px; padding: 4px 10px; font-size: 8px; }
+  .game-view.is-mobile-page .sound-bar { min-height: 30px; padding: 4px 10px; font-size: 8px; flex-wrap: nowrap; gap: 8px; }
+  .game-view.is-mobile-page #music-status { flex-basis: auto; }
+  .game-view.is-mobile-page .music-volume { flex: 0 1 auto; gap: 6px; }
+  .game-view.is-mobile-page .music-volume input { width: 70px; }
+  .game-view.is-mobile-page .game-footer { display: none; }
+}
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }

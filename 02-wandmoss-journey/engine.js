@@ -258,16 +258,20 @@
     p.x = clamp(p.x, 0, s.worldWidth - p.w);
     for (const ground of s.platforms) {
       if (ground.oneWay || !overlap(p, ground)) continue;
-      if (p.vx > 0) p.x = ground.x - p.w;
-      else if (p.vx < 0) p.x = ground.x + ground.w;
-      p.vx = 0;
+      // Resolve only the vertical face crossed by this move. Feet settling on
+      // an already overlapping platform are handled by the landing pass below.
+      if (p.vx > 0 && oldX + p.w <= ground.x) {
+        p.x = ground.x - p.w; p.vx = 0;
+      } else if (p.vx < 0 && oldX >= ground.x + ground.w) {
+        p.x = ground.x + ground.w; p.vx = 0;
+      }
     }
     p.vy = Math.min(950, p.vy + GRAVITY * dt);
     p.y += p.vy * dt;
     if (p.y<42) {p.y=42;p.vy=0;}
     p.grounded = false;
     for (const platform of s.platforms) {
-      const within = p.x + p.w > platform.x + 1 && p.x < platform.x + platform.w - 1;
+      const within = p.x + p.w > platform.x && p.x < platform.x + platform.w;
       if (!within) continue;
       if (p.vy >= 0 && oldY + p.h <= platform.y + 2 && p.y + p.h >= platform.y) {
         p.y = platform.y - p.h; p.vy = 0; p.grounded = true;
