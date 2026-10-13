@@ -1,28 +1,34 @@
 # Wandmoss Journey — completion and publication backlog
 
 **Recorded:** 2026-10-09  
-**Updated:** 2026-10-11  
-**Status:** Gameplay development is complete. Codex reviewed the public documentation and supporting records; the case study is Validated. The local log-edge and phone-layout corrections will accompany the documentation in the second publication PR. Commit/push, publication and corrected hosted/physical-phone verification remain.
+**Updated:** 2026-10-13\
+**Status:** Closed and published. The case study is Published; the documentation and corrections are in `main` after PR #3. I confirmed completion of corrected hosted-version and physical-phone testing, publication and project closure.
 
-## Current release work — 2026-10-11
+## Publication and verification closed — 2026-10-13
 
-The documentation consistency, scope and link review is complete. Continue
-on `feat/wandmoss-journey-finalization` with the existing uncommitted changes
-to commit/push and open the second publication PR. Corrected hosted-build
-and physical-phone checks remain after publication. The
+The second publication PR, **#3**, is merged into `main` as `f9b7d85`,
+incorporating `3810d27`, the final documentation and both game corrections.
+I confirmed that testing of the corrected hosted version and on a physical
+phone was complete, and that the project was closed and published.
+
+This date records my confirmation and the documentation update, rather than
+the dates of the tests or merge. My completion report is separate from
+Codex's earlier local technical checks. The
 [earlier handoff](DEVELOPMENT_FLOW.md#63-defer-completion-until-tomorrow)
-remains a historical source record; the raw development flow is now frozen.
+remains a historical source record; the raw development flow stays frozen.
 
 ## Gameplay development closed — 2026-10-10
 
 I checked the desktop version and reported a positive result. I chose to
 close gameplay development and publish both local corrections together with
 the final documentation in the **second Wandmoss Journey publication PR**.
-The first publication was GitHub PR #2; the future PR's GitHub number is not
-recorded yet. See the [closure record](DEVELOPMENT_FLOW.md#56-close-gameplay-development-and-bundle-the-corrections-with-documentation).
+The first publication was GitHub PR #2; the second PR's GitHub number was not
+recorded at that point. See the [closure record](DEVELOPMENT_FLOW.md#56-close-gameplay-development-and-bundle-the-corrections-with-documentation)
+and the completed publication record above.
 
-My desktop feedback does not supply a browser/scenario checklist or a
-physical-phone result. Review the corrected phone version after publication.
+My desktop feedback at that point did not supply a browser/scenario checklist
+or a physical-phone result. I subsequently confirmed the hosted and
+physical-phone checks as complete in the publication closure above.
 
 I tested the soundtrack and the adjusted movement and combat effects. I then
 said we could finish the playable part and chose to preserve the lanterns and
@@ -152,8 +158,8 @@ Shared methodology remains unchanged in this documentation iteration.
 At the fullscreen/publication-README checkpoint, Codex kept checks focused on
 the fullscreen interface and README/assets. After correcting a test's instant
 stop assumption, only the remaining layout/API-failure checks were repeated;
-the passed native/audio checks and full campaign suites were not rerun. Review
-cost again at the hosted release candidate; no new usage estimate was made.
+the passed native/audio checks and full campaign suites were not rerun.
+No new usage estimate was made.
 
 ## Publication sequence
 
@@ -161,9 +167,10 @@ The initial [name and asset review](evidence/NAME_AND_LICENSE_REVIEW.md) is
 complete and remains a historical review of the former title. It identified
 name conflicts and found no concrete missing asset licence or credit requirement.
 The [selected-name register review](evidence/WANDMOSS_TRADEMARK_REVIEW.md)
-is complete within its stated scope and limits. The first publication PR is
-merged, and I reported completing the entire hosted game. My later log-edge
-bug report is recorded separately below.
+is complete within its stated scope and limits. Both publication PRs are
+merged, and I confirmed the corrected hosted and physical-phone tests as
+complete. The earlier hosted playthrough and subsequent log-edge bug report
+are recorded separately below.
 
 1. [x] Complete the defined P0 selected-name register review before publishing.
    The current-title findings and remaining coverage limits are in the linked
@@ -173,9 +180,9 @@ bug report is recorded separately below.
 2. [x] Publish the minimal playable version in the first GitHub PR and launch
    it on GitHub Pages. The release includes **the minimal README, all game files and
    assets, license/attribution information, bundled music, and the README's
-   screenshot and Play-button asset**. PR **#2** was merged; local main now
+   screenshot and Play-button asset**. PR **#2** was merged; `main`
    includes merge commit `96bc9a9` and release commit `def567b`. The remaining
-   public documentation belongs in the **second PR**. Keep `docs/README_BACKUP.md`
+   public documentation was published in **PR #3**. Keep `docs/README_BACKUP.md`
    locally and exclude it from publication, following my 2026-10-11 decision.
    **Approved exception:** I also included the already-staged corrections to
    `methodology/AI_TRANSFORMATION_OUTCOMES_TEMPLATE.md` and
@@ -189,21 +196,21 @@ bug report is recorded separately below.
    [development flow](DEVELOPMENT_FLOW.md) and verification evidence, align
    the [outcome case](../AI_TRANSFORMATION_OUTCOMES.md) with the current shared
    template/playbook, and make the project and root READMEs consistent.
-   Codex completed the consistency/source/link review on 2026-10-11; the case
-   is Validated and gameplay development is explicitly marked completed.
-5. [ ] Commit/push the reviewed files and open the second publication PR with
-   the final project documentation,
-   the local fallen-log collision correction, the phone layout/fullscreen/pinch
-   correction and their verification harnesses. I chose this combined release
-   when closing gameplay development.
-6. [ ] After publication, verify the corrected hosted phone version, including
-   rotation, fullscreen entry/exit, touch controls and pinch zoom.
+   Codex completed the consistency/source/link review on 2026-10-11 and marked
+   the case Validated at that checkpoint. Its current status is Published.
+5. [x] Publish the reviewed final documentation, fallen-log collision
+   correction, phone layout/fullscreen/pinch correction and their verification
+   harnesses together. PR **#3** is merged into `main` as `f9b7d85`,
+   incorporating `3810d27`; this completes my chosen combined release.
+6. [x] Verify the corrected hosted version after publication. I confirmed
+   completion in the publication and verification closure above.
 
 The [development flow](DEVELOPMENT_FLOW.md#18-record-positive-testing-feedback-next-session-work-and-raw-usage)
 preserves my reported time and the supplied raw usage snapshot for the final
 summary. The [earlier two-stage plan](DEVELOPMENT_FLOW.md#24-finish-the-playable-interface-and-plan-publication-in-two-stages)
 and [development closure](DEVELOPMENT_FLOW.md#56-close-gameplay-development-and-bundle-the-corrections-with-documentation)
-record the publication sequence and the scope of the remaining release.
+record the planned publication sequence and scope of the second release,
+now completed.
 
 ## Post-release issue — P1: walking off fallen logs
 
@@ -216,9 +223,9 @@ record the publication sequence and the scope of the remaining release.
 - [x] Close the development iteration following my positive desktop feedback
   and decision to finish gameplay development. I did not report a separate
   detailed fallen-log test checklist.
-- [ ] Publish the correction with documentation in the second publication PR
-  and verify the updated hosted build. The original hosted release remains
-  unchanged until that publication.
+- [x] Publish the correction with documentation in PR #3 and verify the
+  updated hosted build. Publication is complete, and I confirmed the corrected
+  hosted-version tests as complete in the closure above.
 
 ## Post-release issue — P1: readable phone play
 
@@ -228,9 +235,9 @@ record the publication sequence and the scope of the remaining release.
   [verification record](VERIFICATION.md#phone-layout-fullscreen-and-pinch-zoom--2026-10-10).
 - [x] Accept the iteration for the second publication PR after my positive
   desktop review and decision to close gameplay development.
-- [ ] Complete my physical-phone review after publishing the correction with
-  documentation, including rotation, fullscreen entry/exit, touch movement
-  and pinch zoom. My desktop feedback does not establish phone acceptance.
+- [x] Complete my physical-phone review after publishing the correction with
+  documentation in PR #3. I confirmed completion in the closure above;
+  this is separate from the earlier desktop feedback and Codex's local checks.
 
 ## Documentation alignment
 
@@ -239,15 +246,13 @@ I requested this work in a fresh thread. Codex prepared the concise
 [outcome case](../AI_TRANSFORMATION_OUTCOMES.md), and updated the
 [project README](../README.md) and [playground README](../../README.md).
 The frozen raw flow, historical reports and existing screenshot remain
-public source material. The archived README stays local and is excluded
-from the second publication PR. The shared methodology was used without modification.
+public source material. The archived README stays local and was excluded
+from PR #3. The shared methodology was used without modification.
 
-- [x] Complete the public documentation and mark the case Validated after
-  checking its consistency, source attribution, local links and limitations.
+- [x] Complete the public documentation and validate its consistency, source
+  attribution, local links and limitations; publish the case in PR #3.
 - [x] Exclude the local README backup and Python cache files from publication.
-- [x] Remove the unused Play-button SVG from the working tree; include its
-  deletion in the second publication PR.
+- [x] Remove the unused Play-button SVG; its deletion was included in PR #3.
 
-Publication remains my decision. The second PR includes both local
-corrections; physical-phone and corrected hosted-build verification remain
-afterwards.
+I confirmed publication, corrected hosted-build and physical-phone
+verification, and project closure as complete. No release tasks remain open.
