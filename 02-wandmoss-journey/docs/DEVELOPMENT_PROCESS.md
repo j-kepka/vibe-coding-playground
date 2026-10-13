@@ -25,12 +25,12 @@ rather than arriving as one complete specification.
 | Step | My request or observation, paraphrased | Codex's implementation and resulting behavior |
 | --- | --- | --- |
 | 1. A forest prototype | Build one fairy-tale level with a dwarf wizard and a smoking wand. | Plain HTML, CSS, JavaScript and Canvas 2D, with original scenery drawn in code. The scrolling forest included jumping, spells, enemies, fireflies, hearts, lantern checkpoints and keyboard/touch controls. It opened directly from local files. |
-| 2. A four-chapter adventure | Add a harder dusk forest, bright clouds with manually activated rocket boots, and a ground finale with a ten-hit boss. | Codex preserved the first forest, added the other chapters and story transitions, and implemented a 30-second boost followed by 15 seconds of recovery. Checks caught boots ending early at lanterns and a cloud exit that boosted jumps could overshoot. |
+| 2. A four-chapter adventure | Add a harder dusk forest, bright clouds with manually activated rocket boots, and a final encounter with the Guardian of the Valley. | Codex preserved the first forest, added the other chapters and story transitions, and implemented a 30-second boost followed by 15 seconds of recovery. Checks caught boots ending early at lanterns and a cloud exit that boosted jumps could overshoot. |
 | 3. Scenery stability and repeatable boss tests | The background clouds shake, the boss is difficult, and I need saves to revisit the fight. | Fixed scenery with camera-only parallax replaced the unstable background. The boss's hit flash became visual only, allowing connecting shots to count. Chapter and pre-boss saves, Continue and quick retries made repeated review practical. A temporary direct boss launch was added for testing. |
 | 4. Balance and a visible ending | After several wins, put boots on C, slow casting to one second, and let the defeated boss kneel and fall before victory. | C became the primary shortcut; E/K remained aliases. Codex added a one-second wand cooldown and a 2.2-second defeat sequence, with pause, retry and reward handling. I subsequently reported completing the whole game and finding the final fight fine. |
 | 5. Readable cloud platforms | Remove three unwanted shadow-like shapes and distinguish scenery from clouds I can land on. | Codex traced the shapes to translucent decorative islands and removed them. Softer blue background clouds and opaque platforms with outlined landing ridges made the physical surfaces clearer. |
 | 6. Music and subtle effects | Suggest fuller recordings with clear reuse terms, then add the selected music and movement/combat cues. | Codex bundled five Kevin MacLeod recordings, scene-based playback, volume control and accessible credits. I liked the music iteration. When I could not reliably hear rocket-jump and boss-charge cues, Codex reproduced their triggers and strengthened those two effects; I later confirmed testing the adjustment. |
-| 7. The final campaign interface | Keep the lanterns and saves, remove testing shortcuts, and add English, German and Polish. | Codex kept eight in-run lantern checkpoints and five persistent continuation points in one slot. Language changes preserved gameplay and settings. Codex initially retained Boss practice after removing the chapter selector; my clarification led to its removal, while earned boss retries and normal existing saves remained supported. |
+| 7. The final campaign interface | Keep the lanterns and saves, remove testing shortcuts, and add English, German and Polish. | Codex kept eight lantern checkpoints, with autosave allowing later continuation from chapter starts or the last lantern before the final fight. Language changes preserved gameplay and settings. Codex initially retained Boss practice after removing the chapter selector; my clarification led to its removal, while earned boss retries and normal existing saves remained supported. |
 | 8. Naming and fullscreen | Use one English title across languages and make the game panel fullscreen. | I selected Wandmoss Journey after name screening. Codex updated current branding while preserving storage compatibility and historical names. Native fullscreen included HUD, touch controls and credits; a browser Escape issue led to closing credits on fullscreen exit while preserving pause. |
 
 ## Music, licensing and rights checks
@@ -100,10 +100,14 @@ and added two-finger canvas zoom. Checks also corrected fullscreen scroll
 restoration after rotation.
 
 I subsequently reviewed the desktop version positively and closed gameplay
-development. I chose to publish these local corrections with the documentation
-in the second publication PR. At this account's preparation, that publication
-and my physical-phone review remain pending; my desktop feedback does not
-establish phone acceptance. The [backlog](BACKLOG.md) tracks those remaining steps.
+development. I chose to publish these corrections with the documentation
+in the second publication PR. PR #3 was merged into `main` as `f9b7d85`,
+incorporating `3810d27` and completing that publication plan. I then confirmed
+that testing of the corrected hosted version and on a physical phone was
+complete, and that the project was closed and published. This later report
+is separate from my earlier desktop feedback and Codex's local checks.
+The [publication closure](BACKLOG.md#publication-and-verification-closed--2026-10-13)
+records my confirmation without assigning new test dates or device details.
 
 ## Verification and lessons
 

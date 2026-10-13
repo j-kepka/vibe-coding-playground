@@ -13,14 +13,14 @@ chimes took shape. Prismellow grew through those small iterations.
 
 ## Play
 
-[Play online](https://j-kepka.github.io/vibe-coding-playground/01-prismellow/).
+[Play online on GitHub Pages](https://jaroslawkepka.github.io/vibe-coding-playground/01-prismellow/).
 
-Copy this folder and open `index.html` in your browser. It runs offline, with no
-installation or server.
+To play offline, copy this folder and open `index.html` in your browser.
+No installation or server is needed.
 
 Click or drag neighboring gems to match three or more. Enjoy cascades, hints,
 optional music and sound effects, and an English, Polish or German interface.
-English is the default; a saved language choice takes precedence.
+English is the default, and the game remembers your language choice.
 A game ends when no legal moves remain or when you choose **End game**.
 
 The local Top 10 and preferences belong to your browser profile. Copying the folder
